@@ -1,0 +1,87 @@
+{% extends 'home/base.html' %}
+{% block content %}
+    <main class="feed">
+        {% for post in home_post %}
+            <section class="photo">
+                <header class="photo__header">
+                    <div class="photo__header-column">
+                        <img
+                                class="photo__avatar"
+                                src="media/{{ post.avatar }}"
+                        />
+                    </div>
+                    <div class="photo__header-column">
+                        <span class="photo__username">{{ post.first_name }} {{ post.last_name }}</span>
+
+                    </div>
+                </header>
+                <div class="photo__file-container">
+                    <img
+                            class="photo__file"
+                            src="{{ post.photo.url }}"
+                    />
+                </div>
+                <div class="photo__info">
+                    <div class="photo__icons">
+                        <span class="photo__icon">
+                            <i class="fa fa-heart-o heart fa-lg"></i>
+                        </span>
+                        <span class="photo__icon">
+                            <i class="fa fa-comment-o fa-lg"></i>
+                        </span>
+                    </div>
+                    <span class="photo__likes">35 likes</span>
+                    <ul class="photo__comments">
+                        <li class="photo__comment">
+                            <span class="photo__comment-author">{{ post.first_name }} {{ post.last_name }}</span>{{ post.content }}
+                        </li>
+                        <div id="results-comment{{ post.post }}">
+
+                        </div>
+
+                    </ul>
+                    <span class="photo__time-ago">{{ post.created_at }}</span>
+                    <div class="photo__add-comment-container">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Add a comment..." name="content" id="content{{ post.post }}"
+                                  class="photo__add-comment">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <script>
+                    $('#content{{ post.post }}').keypress(function (e) {
+                        if (e.which === 13) {
+                            $.ajax({
+                            type: "POST",
+                            url: "{% url 'home:comments'  post.post %}",
+                            data: {
+                                'content': $('#content{{ post.post }}').val(),
+                                'csrfmiddlewaretoken': $("input[name=csrfmiddlewaretoken]").val()
+                            },
+                            dataType: 'html',
+                            success: function (data) {
+                                $('#content{{ post.post }}').val('');
+                                $('#results-comment{{ post.post }}').html(data)
+                            },
+                        });
+                        }
+                    });
+                    function load_comments() {
+                        $.ajax({
+                            type: "GET",
+                            url: "{% url 'home:comments' post.post %}",
+                            dataType: 'html',
+                            success: function (data) {
+                                $('#results-comment{{ post.post }}').html(data)
+                            },
+                        });
+                    }
+
+                    setTimeout(load_comments, 0);
+                    setInterval(load_comments, 1000);
+                </script>
+
+            </section>
+        {% endfor %}
+    </main>
+{% endblock %}

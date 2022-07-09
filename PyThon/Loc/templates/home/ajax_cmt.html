@@ -1,0 +1,5 @@
+{% for item  in post_comment %}
+    <li class="photo__comment">
+        <span class="photo__comment-author">{{ item.username }}</span>{{ item.content }}
+    </li>
+{% endfor %}

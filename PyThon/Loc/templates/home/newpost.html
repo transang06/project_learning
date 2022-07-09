@@ -1,0 +1,11 @@
+{% extends 'home/base.html' %}
+{% block content %}
+    <form action="{% url 'home:newpost' %}" method="post" class="container" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+            <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        </div>
+        <input type="file" accept='image/*' name="photo" required>
+        <input type="submit" value="submit">
+    </form>
+{% endblock %}

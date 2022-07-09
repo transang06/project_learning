@@ -1,0 +1,14 @@
+{% extends 'home/base.html' %}
+{% block title %} Upload File {% endblock %}
+{% block content %}
+    <h2> Upload File </h2>
+    <form action="{% url 'uploadModel:getFile'%}" method="post"  enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ UF.as_p }}
+        <input type="submit">
+    </form>
+
+
+
+{% endblock %}
+

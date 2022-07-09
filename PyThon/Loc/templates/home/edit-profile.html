@@ -1,0 +1,63 @@
+{% extends 'home/base.html' %}
+{% block content %}
+    <main class="edit-profile">
+        {% for item in user_profile %}
+            <section class="profile-form">
+                <header class="profile-form__header">
+                    <div class="profile-form__avatar-container">
+                        {% if item.avatar %}
+                        <img
+                                src="{{ item.avatar.url }}"
+                                class="profile-form__avatar"
+                        />
+                        {% else %}
+                         <img
+                                src=""
+                                class="profile-form__avatar"
+                        />
+                        {% endif %}
+                    </div>
+                    <h4 class="profile-form__title">{{ item.username }}</h4>
+                </header>
+                <form action="{% url 'home:edit_profile' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="edit-profile__form-row">
+                        <label for="first_name" class="edit-profile__label">first_name
+                        </label>
+                        <input id="first_name" name="first_name" type="text" value="{{ item.first_name }}"
+                               class="edit-profile__input"/>
+                    </div>
+                    <div class="edit-profile__form-row">
+                        <label for="last_name" class="edit-profile__label">last_name
+                        </label>
+                        <input id="last_name" name="last_name" type="text" value="{{ item.last_name }}"
+                               class="edit-profile__input"/>
+                    </div>
+                    <div class="edit-profile__form-row">
+                        <label for="email" class="edit-profile__label"> Email </label>
+                        <input type="email" class="edit-profile__input" name="email" id="email" value="{{ item.email }}"/>
+                    </div> <div class="edit-profile__form-row">
+                        <label for="namSinh" class="edit-profile__label"> namSinh </label>
+                        <input type="date" class="edit-profile__input" value="{{ item.namSinh|date:'Y-m-d'  }}" name="namSinh" id="namSinh"/>
+                    </div>
+
+                    <div class="edit-profile__form-row">
+                        <label for="gender" class="edit-profile__label">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="whatever">Whatever</option>
+                        </select>
+                    </div>
+                    <label for="avatar">Ảnh đại diện</label>
+                    <input type="file" id="avatar" accept='image/*' name="avatar">
+                    <div class="edit-profile__form-row">
+                        <label class="edit-profile__label"></label>
+                        <input type="submit" value="Submit">
+                    </div>
+                    {{ mess }}
+                </form>
+            </section>
+        {% endfor %}
+    </main>
+{% endblock %}

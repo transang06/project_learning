@@ -1,0 +1,2313 @@
+b'\r\n<!DOCTYPE html>\r\n
+<html lang="vi">\r\n\r\n
+<head>\r\n \r\n\r\n
+    <meta charset="utf-8">
+    \r\n
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    \r\n
+    <link rel="dns-prefetch" href="//vcdn.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//icdn.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//cdnweb.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//cdndulich.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//cdnduhoc.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//cdnmobile.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//webapi.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//captcha.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//comment.dantri.com.vn"/>
+    \r\n\r\n
+    <link rel="dns-prefetch" href="//fonts.googleapis.com"/>
+    \r\n
+    <link rel="dns-prefetch" href="//cdn.jwplayer.com"/>
+    \r\n
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+    \r\n
+    <link rel="dns-prefetch" href="//media1.admicro.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//logsbin.dantri.com.vn"/>
+    \r\n
+    <link rel="dns-prefetch" href="//www.google-analytics.com"/>
+    \r\n
+    <link rel="dns-prefetch" href="//www.googletagmanager.com"/>
+    \r\n\r\n
+    <script>\r\n
+    window.wDataLayer = {
+        "platform": "web",
+        "page_type": "article",
+        "item_id": "20210413114347761",
+        "cate_id": "20",
+        "tags": ["Hu\xe1\xbb\xb3nh C\xc6\xb0", "B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf", "giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1", "Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7"],
+        "cate_name": "X\xc3\xa3 h\xe1\xbb\x99i",
+        "cate_list": null,
+        "sub_cates": null,
+        "isBlockedAds": 0,
+        "label": "Web",
+        "author_id": null,
+        "published_date": "2021-04-13T17:12:16.640+07:00"
+    };\r\n</script>
+    \r\n
+    <script>\r\n
+    window.DONGLOGS_WAITDOCREADY = 0, function (e, t) {
+        var o, n;
+        "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (e = e || self, o = e.Cookies, (n = e.Cookies = t()).noConflict = function () {
+            return e.Cookies = o, n
+        })
+    }(this, function () {
+        "use strict";
+
+        function a(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var o = arguments[t];
+                for (var n in o) e[n] = o[n]
+            }
+            return e
+        }
+
+        var w = {
+            read: function (e) {
+                return e.replace(/%3B/g, ";")
+            }, write: function (e) {
+                return e.replace(/;/g, "%3B")
+            }
+        };
+        return function t(s, i) {
+            function o(e, t, o) {
+                if ("undefined" != typeof document) {
+                    "number" == typeof (o = a({}, i, o)).expires && (o.expires = new Date(Date.now() + 864e5 * o.expires)), o.expires && (o.expires = o.expires.toUTCString()), e = w.write(e).replace(/=/g, "%3D"), t = s.write(String(t), e);
+                    var n = "";
+                    for (var r in o) o[r] && (n += "; " + r, !0 !== o[r] && (n += "=" + o[r].split(";")[0]));
+                    return document.cookie = e + "=" + t + n
+                }
+            }
+
+            return Object.create({
+                set: o, get: function (e) {
+                    if ("undefined" != typeof document && (!arguments.length || e)) {
+                        for (var t = document.cookie ? document.cookie.split("; ") : [], o = {}, n = 0; n < t.length; n++) {
+                            var r = t[n].split("="), i = r.slice(1).join("="), a = w.read(r[0]).replace(/%3D/g, "=");
+                            if (o[a] = s.read(i, a), e === a) break
+                        }
+                        return e ? o[e] : o
+                    }
+                }, remove: function (e, t) {
+                    o(e, "", a({}, t, {expires: -1}))
+                }, withAttributes: function (e) {
+                    return t(this.converter, a({}, this.attributes, e))
+                }, withConverter: function (e) {
+                    return t(a({}, this.converter, e), this.attributes)
+                }
+            }, {attributes: {value: Object.freeze(i)}, converter: {value: Object.freeze(s)}})
+        }(w, {path: "/"})
+    }), window.webLog = window.webLog || {}, function (r) {
+        var i = r.aff = r.aff || {};
+        i._params = "_waff_params", i._items = "_waff_items", i.init = function () {
+            try {
+                var e = document.location.search;
+                if (!e || -1 === e.indexOf("aff_id")) return;
+                for (var t = {}, o = new URLSearchParams(document.location.search).entries(), n = {done: !1}; !n.done;) (n = o.next()).value && (t[n.value[0]] = n.value[1]);
+                i._affParams = t, r.store.setItem(i._params, t)
+            } catch (e) {
+            }
+        }, i.convert = function () {
+            var e = i._affParams || r.store.getItem(i._params);
+            if (!e) return "affParams not found";
+            var t = i._affParams || JSON.parse(e);
+            if (!t.aff_id) return "aff_id not found";
+            var o = i._cartItems || r.store.getItem(i._items);
+            return o ? (t.cart_items = i._cartItems || JSON.parse(o), t.cart_items.constructor !== Array ? "cartItems is invalid []" : (t.event = "Conversion", t.moment = (new Date).toISOString(), t.host = document.location.host, t.uuid = r.services.default.getId(), t.session_id = r.services.default.getSessionId(), t.user_agent = r.client.userAgent, r.http.postJson(i.POSTBACK, t, function () {
+                i._affParams = null, i._cartItems = null, r.store.setItem(i._params, ""), r.store.setItem(i._items, ""), console.log("Conversion posted.")
+            }), console.log("Postback", t), !0)) : "cartItems not found"
+        }
+    }(window.webLog), window.webLog = window.webLog || {}, window.webLog.client = {}, function (e) {
+        e.userAgent = (navigator.userAgent || navigator.vendor || window.opera || "").substr(0, 250), e.browser = function () {
+            var e = !!window.chrome && !!window.chrome.webstore;
+            if (e) return "Chrome";
+            if ("undefined" != typeof InstallTrigger) return "Firefox";
+            if (/constructor/i.test(window.HTMLElement) || "[object SafariRemoteNotification]" === (!window.safari || void 0 !== window.safari && window.safari.pushNotification).toString()) return "Safari";
+            var t = !!document.documentMode;
+            if (t) return "IE";
+            var o = !!window.opr && !!window.opr.addons || !!window.opera || 0 <= navigator.userAgent.indexOf(" OPR/");
+            return o ? "Opera" : !t && window.StyleMedia || !(!e && !o || !window.CSS)
+        }(), e.os = function () {
+            var e = navigator.userAgent || navigator.vendor || window.opera;
+            if (/windows phone/i.test(e)) return "Windows Phone";
+            if (/android/i.test(e)) return "Android";
+            return !/iPad|iPhone|iPod/.test(e) || window.MSStream ? "unknown" : "iOS"
+        }(), e.newId = function (e) {
+            var t, o, n = "";
+            for (e = e || 32, t = 0; t < e; t++) o = 16 * Math.random() | 0, 8 !== t && 12 !== t && 16 !== t && 20 !== t || (n += "-"), n += (12 === t ? 4 : 16 === t ? 3 & o | 8 : o).toString(16);
+            return n
+        }, e.validId = function (e) {
+            return e && 36 === e.length && e.match(/^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$/)
+        }
+    }(window.webLog.client), window.webLog = window.webLog || {}, function (e) {
+        "use strict";
+        e = e || window;
+        var o = [], n = !1, r = !1;
+
+        function i() {
+            if (!n) {
+                n = !0;
+                for (var e = 0; e < o.length; e++) o[e].fn.call(window, o[e].ctx);
+                o = []
+            }
+        }
+
+        function a() {
+            "complete" === document.readyState && i()
+        }
+
+        e.ondocReady = function (e, t) {
+            if ("function" != typeof e) throw new TypeError("callback for docReady(fn) must be a function");
+            n ? setTimeout(function () {
+                e(t)
+            }, 1) : (o.push({
+                fn: e,
+                ctx: t
+            }), "complete" === document.readyState || !document.attachEvent && "interactive" === document.readyState ? setTimeout(i, 1) : r || (document.addEventListener ? (document.addEventListener("DOMContentLoaded", i, !1), window.addEventListener("load", i, !1)) : (document.attachEvent("onreadystatechange", a), window.attachEvent("onload", i)), r = !0))
+        }
+    }(window.webLog), window.webLog = window.webLog || {}, window.webLog.dom = {}, function (e) {
+        e.harvest = function (e, o, n) {
+            var t = document.querySelectorAll(e);
+            if (!t.length) return null;
+            var r = {};
+            return o.forEach(function (e) {
+                r[e] = []
+            }), t.forEach(function (t) {
+                o.forEach(function (e) {
+                    t.hasAttribute(e) ? r[e].push(t.getAttribute(e)) : n && r[e].push(null)
+                })
+            }), r
+        }, e.scrolledTo = function (e) {
+            var t = window.$;
+            if (t) {
+                var o = t(window).scrollTop(), n = o + t(window).height();
+                try {
+                    var r = t(e).offset().top, i = r + t(e).height()
+                } catch (e) {
+                    return
+                }
+                return i <= n && o <= r && r
+            }
+        }
+    }(window.webLog.dom), window.webLog = window.webLog || {}, window.webLog.http = {}, function (e) {
+        e.postJson = function (e, t, o) {
+            var n = new XMLHttpRequest;
+            n.open("POST", e, !0), n.setRequestHeader("Content-Type", "application/json; charset=utf-8"), n.timeout = 3e3, n.onreadystatechange = function () {
+                4 === n.readyState && "function" == typeof o && o(n.status, n.responseText)
+            }, n.send(JSON.stringify(t))
+        }
+    }(window.webLog.http), window.webLog = window.webLog || {}, function (r) {
+        r.inspectlet = function (o, e) {
+            var t = Math.round(e / 30), n = r.store.getItem("__insp");
+            (n || (n = Math.floor(Math.random() * t + 1).toString(), r.store.setItem("__insp", n))) && "456" === n && (window.__insp = window.__insp || [], window.__insp.push(["wid", o]), window.__insp.push(["identify", r.services.default.getId()]), setTimeout(function () {
+                var e, t;
+                void 0 === window.__inspld && (window.__inspld = 1, (e = document.createElement("script")).type = "text/javascript", e.async = !0, e.id = "inspsync", e.src = ("https:" === document.location.protocol ? "https" : "http") + "://cdn.inspectlet.com/inspectlet.js?wid=" + o + "&r=" + Math.floor((new Date).getTime() / 36e5), (t = document.getElementsByTagName("script")[0]).parentNode.insertBefore(e, t))
+            }, 0))
+        }
+    }(window.webLog), window.webLog = window.webLog || {}, window.webLog.store = {}, function (e) {
+        e.method = "cookie", e.getItem = function (e) {
+            var t = window.Cookies, o = "." + window.COOKIE_DOMAIN;
+            try {
+                var n = window.localStorage.getItem(e) || t.get(e) || void 0
+            } catch (e) {
+            }
+            return n && t.set(e, n, {domain: o}), n
+        }, e.setItem = function (e, t) {
+            var o = window.Cookies, n = "." + window.COOKIE_DOMAIN;
+            try {
+                return o.set(e, t, {domain: n})
+            } catch (e) {
+                return
+            }
+        }, e.session = {
+            getItem: function (e) {
+                try {
+                    return window.sessionStorage.getItem(e)
+                } catch (e) {
+                    return
+                }
+            }, setItem: function (e, t) {
+                try {
+                    return window.sessionStorage.setItem(e, t), e
+                } catch (e) {
+                    return
+                }
+            }
+        }
+    }(window.webLog.store), window.webLog = window.webLog || {}, function (i) {
+        var a = "//rec.donglogs.com/heatmap", t = [];
+
+        function o(e) {
+            var t, o, n;
+            null == (e = e || window.event).pageX && null != e.clientX && (o = (t = e.target && e.target.ownerDocument || document).documentElement, n = t.body, e.pageX = e.clientX + (o && o.scrollLeft || n && n.scrollLeft || 0) - (o && o.clientLeft || n && n.clientLeft || 0), e.pageY = e.clientY + (o && o.scrollTop || n && n.scrollTop || 0) - (o && o.clientTop || n && n.clientTop || 0))
+        }
+
+        function n(e, t, o, n) {
+            var r = {
+                event: e,
+                moment: (new Date).toISOString(),
+                url: document.location.href,
+                uuid: i.services.default.getId(),
+                width: window.innerWidth,
+                height: window.innerHeight,
+                page_y: Math.floor(window.pageYOffset),
+                click_x: t,
+                click_y: o,
+                move_coords: n,
+                abtest: i._abtest || null
+            };
+            i.http.postJson(a, r)
+        }
+
+        window.TRACK_HEAT && (document.onmousemove = function (e) {
+            o(e), t.push([e.pageX, e.pageY]), 9 < t.length && (n("Move", null, null, JSON.stringify(t)), t = [])
+        }, document.onclick = function (e) {
+            o(e), n("Click", e.pageX, e.pageY, null)
+        })
+    }(window.webLog), window.webLog = window.webLog || {}, window.webLog.services = window.webLog.services || {}, function (e) {
+        var t, o, n = "default", r = "__wuid", i = "__wssid", a = e.store, s = e.http, w = e.client;
+
+        function c(e, t) {
+            var o, n = typeof e;
+            if (null == e || "string" == n) o = e; else if ("object" == n) o = t ? e : e instanceof Array ? JSON.stringify(e.map(function (e) {
+                return c(e, 1)
+            })) : JSON.stringify(e); else try {
+                o = e.toString()
+            } catch (e) {
+                o = void 0
+            }
+            return o
+        }
+
+        function d() {
+            return o || ((o = a.session.getItem(i)) || (o = w.newId(6), a.session.setItem(i, o)), o)
+        }
+
+        function u(e) {
+            if (!e) return {};
+            var t = document.createElement("a");
+            return t.href = e, t
+        }
+
+        function f() {
+            return t || ((t = a.getItem(r)) || (e = (window.location.hash || "").toLowerCase(), (t = w.validId(e) ? e : null) && void 0 !== a.method && a.setItem(r, t), t && void 0 === a.method && window.WEBLOG_ALLOW_URL_HASH_WUID), t || (t = w.newId(), void 0 !== a.method ? a.setItem(r, t) : window.WEBLOG_ALLOW_URL_HASH_WUID, t));
+            var e
+        }
+
+        e.services[n] = {
+            enabled: !0, loaded: function () {
+                return "string" == typeof window.WEBLOG_API_DEFAULT && "object" == typeof e.store && window.WEBLOG_API_DEFAULT.length
+            }, getId: f, getSessionId: d, identify: function (e, t, o) {
+                return "to-do"
+            }, track: function (e, t, o, n) {
+                var r = function (e, t) {
+                    var o = {};
+                    o.event = e, o.moment = (new Date).toISOString(), o.platform = window.WEBLOG_PLATFORM, o.log_ver = window.WEBLOG_VERSION, o.uuid = f(), o.session_id = d(), o.user_agent = w.userAgent, o.browser = w.browser, o.storage = a.method, o.protocol = window.location.protocol, o.host = window.location.host, o.pathname = window.location.pathname, o.search = window.location.search, o.hash = window.location.hash, o.referrer = document.referrer.substr(0, 250), o.ref_host = u(o.referrer).host, function (e) {
+                        var t = a.session.getItem("_sessionRef"), o = a.session.getItem("_sessionRefHost");
+                        t || (t = document.referrer.substr(0, 250), o = u(t).host, t || (o = t = "Direct"), a.session.setItem("_sessionRef", t), a.session.setItem("_sessionRefHost", o));
+                        e.session_referrer = t, e.session_ref_host = o
+                    }(o);
+                    var n, r = a.getItem("fcm_token");
+                    r && (o.fcm_token = r);
+                    if ("object" == typeof window.wDataLayer) for (n in window.wDataLayer) o[n] = c(window.wDataLayer[n]);
+                    if (t && "object" == typeof t) for (n in t) o[n] = c(t[n]); else o.label = c(t);
+                    return o
+                }(e, t);
+                return o = "function" == typeof o ? (n = o, window.WEBLOG_API_DEFAULT) : o || window.WEBLOG_API_DEFAULT, s.postJson(o, r, n), r
+            }, trackJSErr: function (e, t, o, n, r) {
+                var i = {event: "JSErr"};
+                i.moment = (new Date).toISOString(), i.uuid = f(), i.session_id = d(), i.user_agent = w.userAgent, i.browser = w.browser, i.storage = a.method, i.protocol = window.location.protocol, i.host = window.location.host, i.pathname = window.location.pathname, i.search = window.location.search, i.hash = window.location.hash, i.referrer = document.referrer.substr(0, 250), i.message = e || null, i.source = t || null, i.lineno = o || null, i.colno = n || null, i.error = (r || "").toString(), s.postJson("//logsbin.dantri.com.vn/rec/dantri_com_vn_error", i)
+            }
+        }, e._track = e.services[n].track
+    }(window.webLog), window.webLog = window.webLog || {}, window.webLog.services = window.webLog.services || {}, window.webLog, window.webLog = window.webLog || {}, function (s) {
+        var o = [];
+        s.track = function (t, r, i) {
+            var a = "function" == typeof i;
+            try {
+                window.webLog.preTracking && window.webLog.preTracking[window.WEBLOG_PLATFORM][t]()
+            } catch (e) {
+            }
+            (function () {
+                if (o.length) return o;
+                for (var e in s.services) o.push(e);
+                return o
+            })().forEach(function (o) {
+                var n, e = s.services[o];
+                e && e.enabled && e.loaded() ? n = e.track(t, r, function (e, t) {
+                    a && i(o, n, e, t)
+                }) : a && i(o, null, null, null)
+            })
+        }
+    }(window.webLog), window.WEBLOG_API_DEFAULT = "//logsbin.dantri.com.vn/rec/dantri_com_vn", window.WEBLOG_ALLOW_URL_HASH_WUID = !1, window.WEBLOG_PLATFORM = window.WEBLOG_PLATFORM || "web", window.COOKIE_DOMAIN = window.COOKIE_DOMAIN || "dantri.com.vn", window.WEBLOG_VERSION = "0.0.98", window.WEBLOG_TIMESTAMP = Date.now(), function (t) {
+        function e() {
+            var e = (document.title || "").substr(0, 250);
+            t.track("Pageview", {title: e}, t.tracked)
+        }
+
+        0 === window.DONGLOGS_WAITDOCREADY ? e() : t.ondocReady(e)
+    }(window.webLog);/**2020-07-24T05:02:50.662Z**/\r\n    </script>
+    \r\n\r\n \r\n\r\n\r\n
+    <meta name="robots" content="index,follow,all">
+    \r\n<title>Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao
+        \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y | B\xc3\xa1o D\xc3\xa2n
+        tr\xc3\xad</title>\r\n
+    <meta name="description"
+          content="(D\xc3\xa2n tr\xc3\xad) - Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i."/>
+    \r\n
+    <meta name="keywords"
+          content="\xc4\x90\xe1\xbb\x8dc b\xc3\xa1o, b\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad dantri, X\xc3\xa3 h\xe1\xbb\x99i, Hu\xe1\xbb\xb3nh C\xc6\xb0, B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf, giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1, Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7"/>
+    \r\n
+    <meta name="title"
+          content="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y"/>
+    \r\n\r\n\r\n
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    \r\n\r\n
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    \r\n
+    <meta name="apple-mobile-web-app-title" content="dantri.com.vn"/>
+    \r\n\r\n
+    <meta name="copyright" content="dantri.com.vn"/>
+    \r\n
+    <meta name="author" content="dantri.com.vn"/>
+    \r\n\r\n\r\n<!-- Schema.org markup for Google+ --> \r\n
+    <meta name="google-site-verification" content="W60o5FIiNTC4qM0e14lVCrmQOH7MDm2jy50E3fvvTHs">
+    \r\n
+    <meta itemprop="name"
+          content="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y">
+    \r\n
+    <meta itemprop="image"
+          content="https://icdn.dantri.com.vn/zoom/1200_630/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg">
+    \r\n<!-- Twitter Card data --> \r\n
+    <meta name="twitter:card" content="article">
+    \r\n
+    <meta name="twitter:site" content="B\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad D\xc3\xa2n Tr\xc3\xad">
+    \r\n
+    <meta name="twitter:title"
+          content="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y">
+    \r\n
+    <meta name="twitter:description"
+          content="(D\xc3\xa2n tr\xc3\xad) - Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i.">
+    \r\n
+    <meta name="twitter:creator" content="dantri.com.vn">
+    \r\n
+    <meta name="twitter:image"
+          content="https://icdn.dantri.com.vn/zoom/1200_630/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg">
+    \r\n<!-- Open Graph data --> \r\n
+    <meta property="og:type" content="article"/>
+    \r\n
+    <meta property="og:site_name" content="B\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad D\xc3\xa2n Tr\xc3\xad"/>
+    \r\n
+    <meta property="og:title"
+          content="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y"/>
+    \r\n
+    <meta property="og:url"
+          content="https://dantri.com.vn/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm"/>
+    \r\n
+    <meta property="og:image"
+          content="http://icdn.dantri.com.vn/zoom/1200_630/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg"/>
+    \r\n
+    <meta property="og:description"
+          content="(D\xc3\xa2n tr\xc3\xad) - Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i."/>
+    \r\n
+    <meta property="og:locale" content="vi_VN"/>
+    \r\n
+    <meta name="format-detection" content="telephone=no">
+    \r\n
+    <meta name="thumbnail"
+          content="https://icdn.dantri.com.vn/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg"/>
+    \r\n\r\n\r\n
+    <meta property="og:image:secure_url"
+          content="https://icdn.dantri.com.vn/zoom/1200_630/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg"/>
+    \r\n\r\n\r\n
+    <meta property="fb:app_id" content="164035690775918">
+    \r\n\r\n
+    <meta name="resource-type" content="Document">
+    \r\n
+    <meta name="distribution" content="Global">
+    \r\n
+    <meta property="fb:pages" content="345033318906366">
+    \r\n
+    <meta property="article:author" content="https://www.facebook.com/baodantridientu">
+    \r\n
+    <meta property="article:publisher" content="https://www.facebook.com/baodantridientu">
+    \r\n
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    \r\n\r\n
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    \r\n
+    <meta http-equiv="audience" content="General">
+    \r\n
+    <meta http-equiv="content-language" content="vi"/>
+    \r\n
+    <meta name="revisit-after" content="1 days">
+    \r\n
+    <link rel="canonical"
+          href="https://dantri.com.vn/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm"/>
+    \r\n\r\n \n
+    <link type="text/css" rel="stylesheet"
+          href="https://cdnweb.dantri.com.vn/bundle/static/dantri-baf88988.min.css?_=baf88988"
+          data-href="/bundle/static/dantri-baf88988.min.css?_=baf88988">
+    \n \r\n \r\n \r\n
+    <link
+    \r\n href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=vietnamese"\r\n
+    rel="stylesheet"/>\r\n \r\n \r\n\r\n\r\n\r\n\r\n    <!-- Google Tag Manager -->\r\n
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({\'gtm.start\':\r\n    new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\r\n    j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\r\n    \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\r\n    })(window,document,\'script\',\'dataLayer\',\'GTM-PM6G9ZN\');</script>
+    \r\n    <!-- End Google Tag Manager -->\r\n
+    <link href="https://amp.dantri.com.vn/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm"
+          rel="amphtml"/>
+    \r\n \r\n \r\n\r\n
+</head>
+\r\n
+<body class="articlev2  dtv2 " data-isrc="articlev2" xds-provider="">\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+<!-- Google Tag Manager (noscript) --> \r\n
+<noscript>\r\n
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM6G9ZN" \r\n height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+\r\n<!-- End Google Tag Manager (noscript) --> \r\n\r\n\r\n\r\n\r\n
+<header class="dt-header">\r\n \r\n\r\n
+    <div class="dt-header___content">\r\n
+        <div class="container">\r\n
+            <div class="dt-header__logo">\r\n <a
+                    title="B\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad D\xc3\xa2n tr\xc3\xad - Tin t\xe1\xbb\xa9c c\xe1\xba\xadp nh\xe1\xba\xadt li\xc3\xaan t\xe1\xbb\xa5c 24/7"
+                    href="/">\r\n <img
+                    src="https://cdnweb.dantri.com.vn/bundle/static/assets/lg_dantri_dktop1.svg?v=0413160019"
+                    alt="B\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad D\xc3\xa2n tr\xc3\xad - Tin t\xe1\xbb\xa9c c\xe1\xba\xadp nh\xe1\xba\xadt li\xc3\xaan t\xe1\xbb\xa5c 24/7">\r\n
+            </a>\r\n
+            </div>
+            \r\n
+            <div id="xds-2"></div>
+            \r\n\r\n
+            <form method="GET" action="/tim-kiem.htm" class="search-box">\r\n <input id="js-search-input" type="text"
+                                                                                     class="form-control search-box__input"
+                                                                                     name="s"
+                                                                                     placeholder="T\xc3\xacm ki\xe1\xba\xbfm tin t\xe1\xbb\xa9c"
+                                                                                     autocomplete="off">\r\n
+                <button class="btn search-box__btn" type="submit">\r\n <i class="dt-icon icon-search"></i>\r\n</button>
+                \r\n
+            </form>
+            \r\n \r\n \r\n
+        </div>
+        \r\n
+    </div>
+    \r\n
+    <nav class="site-menu">\r\n
+        <div class="container">\r\n
+            <ol class="site-menu__list list-unstyled">\r\n
+                <li class="home">\r\n <a title="Trang ch\xe1\xbb\xa7" href="/">\r\n <i class="dt-icon icon-home"></i>\r\n
+                </a>\r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|1" data-cat-id="0" class=""
+                                                                  title="Video" href="/video-page.htm">Video</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Ph\xc3\xa1p lu\xe1\xba\xadt"
+                                        href="/phap-luat.htm">Ph\xc3\xa1p lu\xe1\xba\xadt</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Du L\xe1\xbb\x8bch" href="/du-lich.htm">Du
+                                L\xe1\xbb\x8bch</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="\xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng"
+                                        href="/doi-song.htm">\xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="T\xc3\xacnh y\xc3\xaau"
+                                        href="/tinh-yeu-gioi-tinh.htm">T\xc3\xacnh y\xc3\xaau</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng tr\xe1\xba\xbb"
+                                        href="/nhip-song-tre.htm">Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng tr\xe1\xba\xbb</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="Khoa h\xe1\xbb\x8dc"
+                                        href="/khoa-hoc-cong-nghe.htm">Khoa h\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|7" title="Blog" href="/blog.htm">Blog</a>\r\n</li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|8" title="B\xe1\xba\xa1n \xc4\x91\xe1\xbb\x8dc"
+                                        href="/ban-doc.htm">B\xe1\xba\xa1n \xc4\x91\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|2" data-cat-id="728"
+                                                                  class="" title="S\xe1\xbb\xb1 ki\xe1\xbb\x87n"
+                                                                  href="/su-kien.htm">S\xe1\xbb\xb1 ki\xe1\xbb\x87n</a>\r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|3" data-cat-id="20"
+                                                                  class="active" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                                  href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Ch\xc3\xadnh tr\xe1\xbb\x8b"
+                                        href="/xa-hoi/chinh-tri.htm">Ch\xc3\xadnh tr\xe1\xbb\x8b</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="Ph\xc3\xb3ng s\xe1\xbb\xb1-K\xc3\xbd s\xe1\xbb\xb1"
+                                        href="/xa-hoi/phong-su-ky-su.htm">Ph\xc3\xb3ng s\xe1\xbb\xb1-K\xc3\xbd
+                                s\xe1\xbb\xb1</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="M\xc3\xb4i tr\xc6\xb0\xe1\xbb\x9dng"
+                                        href="/xa-hoi/moi-truong.htm">M\xc3\xb4i tr\xc6\xb0\xe1\xbb\x9dng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="Giao th\xc3\xb4ng"
+                                        href="/xa-hoi/giao-thong.htm">Giao th\xc3\xb4ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="H\xe1\xbb\x93 s\xc6\xa1"
+                                        href="/xa-hoi/ho-so.htm">H\xe1\xbb\x93 s\xc6\xa1</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6"
+                                        title="Chuy\xe1\xbb\x87n ng\xc3\xa0y m\xe1\xbb\x9bi"
+                                        href="/xa-hoi/chuyen-ngay-moi.htm">Chuy\xe1\xbb\x87n ng\xc3\xa0y
+                                m\xe1\xbb\x9bi</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|4" data-cat-id="36"
+                                                                  class="" title="Th\xe1\xba\xbf gi\xe1\xbb\x9bi"
+                                                                  href="/the-gioi.htm">Th\xe1\xba\xbf
+                    gi\xe1\xbb\x9bi</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Ch\xc3\xa2u \xc3\x81"
+                                        href="/the-gioi/chau-a.htm">Ch\xc3\xa2u \xc3\x81</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="EU &amp; Nga" href="/the-gioi/eu-nga.htm">EU
+                                &amp; Nga</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="Ch\xc3\xa2u M\xe1\xbb\xb9"
+                                        href="/the-gioi/chau-my.htm">Ch\xc3\xa2u M\xe1\xbb\xb9</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="\xc4\x90i\xe1\xbb\x83m n\xc3\xb3ng"
+                                        href="/the-gioi/diem-nong.htm">\xc4\x90i\xe1\xbb\x83m n\xc3\xb3ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="T\xc6\xb0 li\xe1\xbb\x87u"
+                                        href="/the-gioi/tu-lieu.htm">T\xc6\xb0 li\xe1\xbb\x87u</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="Ki\xe1\xbb\x81u b\xc3\xa0o"
+                                        href="/the-gioi/kieu-bao.htm">Ki\xe1\xbb\x81u b\xc3\xa0o</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|5" data-cat-id="76"
+                                                                  class="" title="Kinh doanh" href="/kinh-doanh.htm">Kinh
+                    doanh</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1"
+                                        title="T\xc3\xa0i ch\xc3\xadnh - \xc4\x90\xe1\xba\xa7u t\xc6\xb0"
+                                        href="/kinh-doanh/tai-chinh-dau-tu.htm">T\xc3\xa0i ch\xc3\xadnh -
+                                \xc4\x90\xe1\xba\xa7u t\xc6\xb0</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng"
+                                        href="/kinh-doanh/thi-truong.htm">Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="Doanh nghi\xe1\xbb\x87p"
+                                        href="/kinh-doanh/doanh-nghiep.htm">Doanh nghi\xe1\xbb\x87p</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="Kh\xe1\xbb\x9fi nghi\xe1\xbb\x87p"
+                                        href="/kinh-doanh/khoi-nghiep.htm">Kh\xe1\xbb\x9fi nghi\xe1\xbb\x87p</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="B\xe1\xba\xa3o v\xe1\xbb\x87 NTD"
+                                        href="/kinh-doanh/bao-ve-ntd.htm">B\xe1\xba\xa3o v\xe1\xbb\x87 NTD</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="B\xe1\xba\xa3o hi\xe1\xbb\x83m"
+                                        href="/kinh-doanh/bao-hiem.htm">B\xe1\xba\xa3o hi\xe1\xbb\x83m</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|7" title="Qu\xe1\xbb\x91c t\xe1\xba\xbf"
+                                        href="/kinh-doanh/quoc-te.htm">Qu\xe1\xbb\x91c t\xe1\xba\xbf</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|8" title="Nh\xc3\xa0 \xc4\x91\xe1\xba\xa5t"
+                                        href="/kinh-doanh/nha-dat.htm">Nh\xc3\xa0 \xc4\x91\xe1\xba\xa5t</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|6" data-cat-id="927"
+                                                                  class=""
+                                                                  title="B\xe1\xba\xa5t \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n"
+                                                                  href="/bat-dong-san.htm">B\xe1\xba\xa5t
+                    \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="D\xe1\xbb\xb1 \xc3\xa1n"
+                                        href="/bat-dong-san/du-an.htm">D\xe1\xbb\xb1 \xc3\xa1n</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng"
+                                        href="/bat-dong-san/thi-truong.htm">Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3"
+                                        title="Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng \xc4\x91\xc3\xb4 th\xe1\xbb\x8b"
+                                        href="/bat-dong-san/nhip-song-do-thi.htm">Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng
+                                \xc4\x91\xc3\xb4 th\xe1\xbb\x8b</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="S\xe1\xbb\x91ng xanh"
+                                        href="/bat-dong-san/song-xanh.htm">S\xe1\xbb\x91ng xanh</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="S\xe1\xba\xafc m\xc3\xa0u Nh\xe1\xba\xadt B\xe1\xba\xa3n"
+                                        href="/bat-dong-san/sac-mau-nhat-ban.htm">S\xe1\xba\xafc m\xc3\xa0u
+                                Nh\xe1\xba\xadt B\xe1\xba\xa3n</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|7" data-cat-id="26"
+                                                                  class="" title="Th\xe1\xbb\x83 thao"
+                                                                  href="/the-thao.htm">Th\xe1\xbb\x83 thao</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1"
+                                        title="B\xc3\xb3ng \xc4\x91\xc3\xa1 trong n\xc6\xb0\xe1\xbb\x9bc"
+                                        href="/the-thao/bong-da-trong-nuoc.htm">B\xc3\xb3ng \xc4\x91\xc3\xa1 trong
+                                n\xc6\xb0\xe1\xbb\x9bc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="B\xc3\xb3ng \xc4\x91\xc3\xa1 Ch\xc3\xa2u \xc3\x82u"
+                                        href="/the-thao/bong-da-chau-au.htm">B\xc3\xb3ng \xc4\x91\xc3\xa1 Ch\xc3\xa2u
+                                \xc3\x82u</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="V\xc3\xb5 thu\xe1\xba\xadt"
+                                        href="/the-thao/vo-thuat.htm">V\xc3\xb5 thu\xe1\xba\xadt</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="Tennis"
+                                        href="/the-thao/tennis.htm">Tennis</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="C\xc3\xa1c m\xc3\xb4n Th\xe1\xbb\x83 thao kh\xc3\xa1c"
+                                        href="/the-thao/cac-mon-the-thao-khac.htm">C\xc3\xa1c m\xc3\xb4n Th\xe1\xbb\x83
+                                thao kh\xc3\xa1c</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="H\xe1\xba\xadu tr\xc6\xb0\xe1\xbb\x9dng"
+                                        href="/the-thao/hau-truong.htm">H\xe1\xba\xadu tr\xc6\xb0\xe1\xbb\x9dng</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|8" data-cat-id="133"
+                                                                  class="" title="Vi\xe1\xbb\x87c l\xc3\xa0m"
+                                                                  href="/lao-dong-viec-lam.htm">Vi\xe1\xbb\x87c
+                    l\xc3\xa0m</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Ch\xc3\xadnh s\xc3\xa1ch"
+                                        href="/lao-dong-viec-lam/chinh-sach.htm">Ch\xc3\xadnh s\xc3\xa1ch</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Vi\xe1\xbb\x87c l\xc3\xa0m"
+                                        href="/lao-dong-viec-lam/viec-lam.htm">Vi\xe1\xbb\x87c l\xc3\xa0m</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="\xc4\x90\xc3\xa0o t\xe1\xba\xa1o"
+                                        href="/lao-dong-viec-lam/dao-tao.htm">\xc4\x90\xc3\xa0o t\xe1\xba\xa1o</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4"
+                                        title="G\xc3\xb3i an sinh 62.000 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng"
+                                        href="/lao-dong-viec-lam/goi-an-sinh-62000-ty-dong.htm">G\xc3\xb3i an sinh
+                                62.000 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="Xu\xe1\xba\xa5t kh\xe1\xba\xa9u lao \xc4\x91\xe1\xbb\x99ng"
+                                        href="/lao-dong-viec-lam/xuat-khau-lao-dong.htm">Xu\xe1\xba\xa5t kh\xe1\xba\xa9u
+                                lao \xc4\x91\xe1\xbb\x99ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="Ch\xc3\xbang t\xc3\xb4i n\xc3\xb3i"
+                                        href="/lao-dong-viec-lam/chung-toi-noi.htm">Ch\xc3\xbang t\xc3\xb4i
+                                n\xc3\xb3i</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|9" data-cat-id="167"
+                                                                  class="" title="Nh\xc3\xa2n \xc3\xa1i"
+                                                                  href="/tam-long-nhan-ai.htm">Nh\xc3\xa2n \xc3\xa1i</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1"
+                                        title="Danh s\xc3\xa1ch \xe1\xbb\xa7ng h\xe1\xbb\x99"
+                                        href="/tam-long-nhan-ai/danh-sach-ung-ho.htm">Danh s\xc3\xa1ch \xe1\xbb\xa7ng
+                                h\xe1\xbb\x99</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="Danh s\xc3\xa1ch k\xe1\xba\xbft chuy\xe1\xbb\x83n"
+                                        href="/tam-long-nhan-ai/danh-sach-ket-chuyen.htm">Danh s\xc3\xa1ch
+                                k\xe1\xba\xbft chuy\xe1\xbb\x83n</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="Ho\xc3\xa0n c\xe1\xba\xa3nh"
+                                        href="/tam-long-nhan-ai/hoan-canh.htm">Ho\xc3\xa0n c\xe1\xba\xa3nh</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|10" data-cat-id="7"
+                                                                  class="" title="S\xe1\xbb\xa9c kh\xe1\xbb\x8fe"
+                                                                  href="/suc-khoe.htm">S\xe1\xbb\xa9c
+                    kh\xe1\xbb\x8fe</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Ung th\xc6\xb0"
+                                        href="/suc-khoe/ung-thu.htm">Ung th\xc6\xb0</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="Ki\xe1\xba\xbfn th\xe1\xbb\xa9c gi\xe1\xbb\x9bi t\xc3\xadnh"
+                                        href="/suc-khoe/kien-thuc-gioi-tinh.htm">Ki\xe1\xba\xbfn th\xe1\xbb\xa9c
+                                gi\xe1\xbb\x9bi t\xc3\xadnh</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="B\xe1\xbb\x87nh Gan"
+                                        href="/suc-khoe/benh-gan.htm">B\xe1\xbb\x87nh Gan</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="T\xc6\xb0 v\xe1\xba\xa5n"
+                                        href="/suc-khoe/tu-van.htm">T\xc6\xb0 v\xe1\xba\xa5n</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="L\xc3\xa0m \xc4\x91\xe1\xba\xb9p"
+                                        href="/suc-khoe/lam-dep.htm">L\xc3\xa0m \xc4\x91\xe1\xba\xb9p</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6"
+                                        title="Ng\xc3\xa0y Th\xe1\xba\xa7y thu\xe1\xbb\x91c Vi\xe1\xbb\x87t Nam"
+                                        href="/suc-khoe/ngay-thay-thuoc-viet-nam.htm">Ng\xc3\xa0y Th\xe1\xba\xa7y
+                                thu\xe1\xbb\x91c Vi\xe1\xbb\x87t Nam</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|7"
+                                        title="\xc4\x90\xe1\xba\xa1i d\xe1\xbb\x8bch Covid-19"
+                                        href="/suc-khoe/dai-dich-covid-19.htm">\xc4\x90\xe1\xba\xa1i d\xe1\xbb\x8bch
+                                Covid-19</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|11" data-cat-id="730"
+                                                                  class="" title="V\xc4\x83n h\xc3\xb3a"
+                                                                  href="/van-hoa.htm">V\xc4\x83n h\xc3\xb3a</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1"
+                                        title="\xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng v\xc4\x83n h\xc3\xb3a"
+                                        href="/van-hoa/doi-song-van-hoa.htm">\xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng
+                                v\xc4\x83n h\xc3\xb3a</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="\xc4\x90i\xe1\xbb\x87n \xe1\xba\xa3nh"
+                                        href="/van-hoa/dien-anh.htm">\xc4\x90i\xe1\xbb\x87n \xe1\xba\xa3nh</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="\xc3\x82m nh\xe1\xba\xa1c"
+                                        href="/van-hoa/am-nhac.htm">\xc3\x82m nh\xe1\xba\xa1c</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="V\xc4\x83n h\xe1\xbb\x8dc"
+                                        href="/van-hoa/van-hoc.htm">V\xc4\x83n h\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="S\xc3\xa2n kh\xe1\xba\xa5u - D\xc3\xa2n gian"
+                                        href="/van-hoa/san-khau-dan-gian.htm">S\xc3\xa2n kh\xe1\xba\xa5u - D\xc3\xa2n
+                                gian</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6"
+                                        title="H\xe1\xba\xa1t gi\xe1\xbb\x91ng t\xc3\xa2m h\xe1\xbb\x93n"
+                                        href="/van-hoa/hat-giong-tam-hon.htm">H\xe1\xba\xa1t gi\xe1\xbb\x91ng t\xc3\xa2m
+                                h\xe1\xbb\x93n</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|7"
+                                        title="H\xc6\xb0\xc6\xa1ng v\xe1\xbb\x8b Vi\xe1\xbb\x87t"
+                                        href="/van-hoa/huong-vi-viet.htm">H\xc6\xb0\xc6\xa1ng v\xe1\xbb\x8b
+                                Vi\xe1\xbb\x87t</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|8"
+                                        title="T\xe1\xba\xbft \xc4\x90o\xc3\xa0n Vi\xc3\xaan"
+                                        href="/van-hoa/tet-doan-vien.htm">T\xe1\xba\xbft \xc4\x90o\xc3\xa0n
+                                Vi\xc3\xaan</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|12" data-cat-id="23"
+                                                                  class="" title="Gi\xe1\xba\xa3i tr\xc3\xad"
+                                                                  href="/giai-tri.htm">Gi\xe1\xba\xa3i tr\xc3\xad</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Sao Vi\xe1\xbb\x87t"
+                                        href="/giai-tri/sao-viet.htm">Sao Vi\xe1\xbb\x87t</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Hollywood" href="/giai-tri/hollywood.htm">Hollywood</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="Ch\xc3\xa2u \xc3\x81"
+                                        href="/giai-tri/chau-a.htm">Ch\xc3\xa2u \xc3\x81</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="Th\xe1\xbb\x9di trang"
+                                        href="/giai-tri/thoi-trang.htm">Th\xe1\xbb\x9di trang</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="Xem - \xc4\x82n - Ch\xc6\xa1i"
+                                        href="/giai-tri/xem-an-choi.htm">Xem - \xc4\x82n - Ch\xc6\xa1i</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|13" data-cat-id="111"
+                                                                  class="" title="Xe &#x2B;&#x2B;"
+                                                                  href="/o-to-xe-may.htm">Xe &#x2B;&#x2B;</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng xe"
+                                        href="/o-to-xe-may/thi-truong-xe.htm">Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng
+                                xe</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="B\xe1\xba\xa3ng gi\xc3\xa1 \xc3\xb4 t\xc3\xb4"
+                                        href="https://dantri.com.vn/o-to-xe-may/bang-gia-o-to.htm">B\xe1\xba\xa3ng
+                                gi\xc3\xa1 \xc3\xb4 t\xc3\xb4</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="V\xc4\x83n h\xc3\xb3a xe"
+                                        href="/o-to-xe-may/van-hoa-xe.htm">V\xc4\x83n h\xc3\xb3a xe</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="T\xc6\xb0 v\xe1\xba\xa5n xe"
+                                        href="/o-to-xe-may/tu-van-xe.htm">T\xc6\xb0 v\xe1\xba\xa5n xe</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="\xc4\x90ua xe"
+                                        href="/o-to-xe-may/dua-xe.htm">\xc4\x90ua xe</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="Gi\xc3\xa1 xe"
+                                        href="/o-to-xe-may/gia-xe.htm">Gi\xc3\xa1 xe</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|14" data-cat-id="119"
+                                                                  class=""
+                                                                  title="S\xe1\xbb\xa9c m\xe1\xba\xa1nh s\xe1\xbb\x91"
+                                                                  href="/suc-manh-so.htm">S\xe1\xbb\xa9c m\xe1\xba\xa1nh
+                    s\xe1\xbb\x91</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="M\xc3\xa1y t\xc3\xadnh - M\xe1\xba\xa1ng"
+                                        href="/suc-manh-so/vi-tinh.htm">M\xc3\xa1y t\xc3\xadnh - M\xe1\xba\xa1ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2"
+                                        title="Di \xc4\x91\xe1\xbb\x99ng - Vi\xe1\xbb\x85n th\xc3\xb4ng"
+                                        href="/suc-manh-so/di-dong-vien-thong.htm">Di \xc4\x91\xe1\xbb\x99ng -
+                                Vi\xe1\xbb\x85n th\xc3\xb4ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3"
+                                        title="\xc4\x90i\xe1\xbb\x87n t\xe1\xbb\xad ti\xc3\xaau d\xc3\xb9ng"
+                                        href="/suc-manh-so/dien-may.htm">\xc4\x90i\xe1\xbb\x87n t\xe1\xbb\xad
+                                ti\xc3\xaau d\xc3\xb9ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4" title="Nghe nh\xc3\xacn"
+                                        href="/suc-manh-so/nghe-nhin.htm">Nghe nh\xc3\xacn</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5"
+                                        title="Ph\xe1\xba\xa7n m\xe1\xbb\x81m - B\xe1\xba\xa3o m\xe1\xba\xadt"
+                                        href="/suc-manh-so/phan-mem-bao-mat.htm">Ph\xe1\xba\xa7n m\xe1\xbb\x81m -
+                                B\xe1\xba\xa3o m\xe1\xba\xadt</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6"
+                                        title="Th\xe1\xbb\xa7 thu\xe1\xba\xadt - M\xe1\xba\xb9o v\xe1\xba\xb7t"
+                                        href="/suc-manh-so/thu-thuat.htm">Th\xe1\xbb\xa7 thu\xe1\xba\xadt -
+                                M\xe1\xba\xb9o v\xe1\xba\xb7t</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|7"
+                                        title="Th\xe1\xbb\x8b tr\xc6\xb0\xe1\xbb\x9dng c\xc3\xb4ng ngh\xe1\xbb\x87"
+                                        href="/suc-manh-so/thi-truong-cong-nghe.htm">Th\xe1\xbb\x8b
+                                tr\xc6\xb0\xe1\xbb\x9dng c\xc3\xb4ng ngh\xe1\xbb\x87</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover">\r\n \r\n <a data-utm="Article|MenuMain|15" data-cat-id="25"
+                                                                  class="" title="Gi\xc3\xa1o d\xe1\xbb\xa5c"
+                                                                  href="/giao-duc-huong-nghiep.htm">Gi\xc3\xa1o
+                    d\xe1\xbb\xa5c</a>\r\n
+                    <div class="dropdown__content">\r\n
+                        <ol class="site-menu__dropdown site-menu__dropdown--single">\r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|1" title="Tin tuy\xe1\xbb\x83n sinh"
+                                        href="/giao-duc-huong-nghiep/tin-tuyen-sinh.htm">Tin tuy\xe1\xbb\x83n sinh</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|2" title="Khuy\xe1\xba\xbfn h\xe1\xbb\x8dc"
+                                        href="/giao-duc-huong-nghiep/khuyen-hoc.htm">Khuy\xe1\xba\xbfn
+                                h\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|3" title="G\xc6\xb0\xc6\xa1ng s\xc3\xa1ng"
+                                        href="/giao-duc-huong-nghiep/guong-sang.htm">G\xc6\xb0\xc6\xa1ng s\xc3\xa1ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|4"
+                                        title="Gi\xc3\xa1o d\xe1\xbb\xa5c - Ngh\xe1\xbb\x81 nghi\xe1\xbb\x87p"
+                                        href="/giao-duc-huong-nghiep/giao-duc-nghe-nghiep.htm">Gi\xc3\xa1o
+                                d\xe1\xbb\xa5c - Ngh\xe1\xbb\x81 nghi\xe1\xbb\x87p</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|5" title="Du h\xe1\xbb\x8dc"
+                                        href="/giao-duc-huong-nghiep/du-hoc.htm">Du h\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|MenuCate|6" title="Tuy\xe1\xbb\x83n sinh"
+                                        href="/giao-duc-huong-nghiep/tuyen-sinh.htm">Tuy\xe1\xbb\x83n sinh</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+                <li class="dropdown dropdown--hover dropdown--right">\r\n \r\n <a data-utm="Article|MenuMain|16"
+                                                                                  data-cat-id="1001" class=""
+                                                                                  title="An sinh" href="/an-sinh.htm">An
+                    sinh</a>\r\n
+                </li>
+                \r\n
+                <li class="others dropdown dropdown--hover dropdown--right" id="site-dropdown">\r\n <a
+                        id="site-dropdown-button" href="javascript:;">\r\n <span class="bars"></span>\r\n </a>\r\n
+                    <div class="dropdown__content" id="site-dropdown__content">\r\n
+                        <ol class="site-menu__dropdown">\r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|17" title="Ph\xc3\xa1p lu\xe1\xba\xadt"
+                                        href="/phap-luat.htm">\r\n Ph\xc3\xa1p lu\xe1\xba\xadt</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|18" title="Du L\xe1\xbb\x8bch" href="/du-lich.htm">\r\n
+                                Du L\xe1\xbb\x8bch</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|19" title="\xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng"
+                                        href="/doi-song.htm">\r\n \xc4\x90\xe1\xbb\x9di s\xe1\xbb\x91ng</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|20" title="T\xc3\xacnh y\xc3\xaau"
+                                        href="/tinh-yeu-gioi-tinh.htm">\r\n T\xc3\xacnh y\xc3\xaau</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|21"
+                                        title="Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng tr\xe1\xba\xbb"
+                                        href="/nhip-song-tre.htm">\r\n Nh\xe1\xbb\x8bp s\xe1\xbb\x91ng
+                                tr\xe1\xba\xbb</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|22" title="Khoa h\xe1\xbb\x8dc"
+                                        href="/khoa-hoc-cong-nghe.htm">\r\n Khoa h\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|23" title="Blog" href="/blog.htm">\r\n Blog</a>\r\n
+                            </li>
+                            \r\n
+                            <li>\r\n <a data-utm="Article|Main_Menu|24" title="B\xe1\xba\xa1n \xc4\x91\xe1\xbb\x8dc"
+                                        href="/ban-doc.htm">\r\n B\xe1\xba\xa1n \xc4\x91\xe1\xbb\x8dc</a>\r\n
+                            </li>
+                            \r\n
+                        </ol>
+                        \r\n
+                    </div>
+                    \r\n
+                </li>
+                \r\n
+            </ol>
+            \r\n
+        </div>
+        \r\n
+    </nav>
+    \r\n \r\n \r\n\r\n
+</header>
+\r\n
+<main class="dt-main">\r\n \r\n\r\n\r\n
+    <div class="container clearfix" data-top-height-container data-sticky-container="" news-type="0">\r\n
+        <div class="col col--main" top-height="left">\r\n
+            <article class="dt-news__detail">\r\n
+                <div class="dt-news__header">\r\n
+                    <ul class="dt-breadcrumb">\r\n
+                        <li>\r\n <a title="D\xc3\xa2n Tr\xc3\xad" href="/">D\xc3\xa2n Tr\xc3\xad</a>\r\n</li>
+                        \r\n
+                        <li>\r\n <a title="X\xc3\xa3 h\xe1\xbb\x99i" href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n
+                        </li>
+                        \r\n
+                    </ul>
+                    \r\n
+                    <div class="dt-news__meta">\r\n <span
+                            class="dt-news__time">Th\xe1\xbb\xa9 ba, 13/04/2021 - 17:12</span>\r\n
+                    </div>
+                    \r\n
+                </div>
+                \r\n \r\n\r\n <h3 class="dt-news__subtitle">\r\n TP Hu\xe1\xba\xbf:\r\n </h3>\r\n <h1
+                        class="dt-news__title">\r\n Thu h\xe1\xbb\x93i th\xc3\xb4ng tin &quot;ch\xc6\xb0a ch\xc3\xadnh
+                    x\xc3\xa1c&quot; v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0
+                    Th\xc3\xa0nh \xe1\xbb\xa7y\r\n </h1>\r\n
+                <div class="dt-news__audio fl-center">\r\n
+                    <div dt-audio="20210413114347761"></div>
+                    \r\n
+                </div>
+                \r\n\r\n
+                <div class="clearfix" data-sticky-container="">\r\n
+                    <ul class="dt-news__social" data-margin-top="52" data-margin-bottom="16">\r\n
+                        <li>\r\n
+                            <div fb-btn type="share" id="20210413114347761"></div>
+                            \r\n
+                        </li>
+                        \r\n
+                        <li>\r\n
+                            <div zalo-btn data-id="20210413114347761"></div>
+                            \r\n
+                        </li>
+                        \r\n
+                        <li>\r\n <a title="In" class="dt-social__item" href="/print-20210413114347761.htm">\r\n <i
+                                class="dt-icon icon-print"></i>\r\n </a>\r\n
+                        </li>
+                        \r\n
+                        <li>\r\n <a title="B\xc3\xacnh lu\xe1\xba\xadn" class="dt-social__item dt-social__item--primary"
+                                    href="#dt-news__comment">\r\n <i class="dt-icon icon-comment"></i>\r\n </a>\r\n
+                        </li>
+                        \r\n
+                    </ul>
+                    \r\n\r\n
+                    <div class="dt-news__body">\r\n
+                        <div class="dt-news__sapo">\r\n <span>D\xc3\xa2n tr\xc3\xad</span>
+                            <h2> Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng
+                                tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua
+                                \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP
+                                Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu
+                                h\xe1\xbb\x93i.</h2>\r\n
+                        </div>
+                        \r\n
+                        <div class="dt-news__content">\r\n <p>Theo \xc4\x91\xc3\xb3, v\xc3\xa0o chi\xe1\xbb\x81u 12/4,
+                            UBND TP Hu\xe1\xba\xbf \xc4\x91\xc3\xa3 ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n
+                            li\xc3\xaan quan vi\xe1\xbb\x87c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng th\xc3\xb4ng qua
+                            \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho h\xe1\xbb\x99 \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0
+                            t\xe1\xba\xa1i l\xc3\xb4 \xc4\x91\xe1\xba\xa5t s\xe1\xbb\x91 A7 - khu \xc4\x91\xe1\xba\xa5t
+                            xen gh\xc3\xa9p thu\xe1\xbb\x99c T\xe1\xbb\x95 13, khu v\xe1\xbb\xb1c 5,
+                            ph\xc6\xb0\xe1\xbb\x9dng An \xc4\x90\xc3\xb4ng, TP Hu\xe1\xba\xbf.</p>\n<p>Nh\xc6\xb0ng sau
+                            \xc4\x91\xc3\xb3, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i ti\xe1\xba\xbfp t\xe1\xbb\xa5c
+                            c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i n\xe1\xbb\x99i dung \xc4\x91\xc3\xa3
+                            cung c\xe1\xba\xa5p cho b\xc3\xa1o ch\xc3\xad k\xc3\xa8m theo n\xe1\xbb\x99i dung l\xc6\xb0u
+                            \xc3\xbd: <em>"\xc4\x90\xe1\xbb\x83 k\xe1\xbb\x8bp th\xe1\xbb\x9di cung c\xe1\xba\xa5p
+                                th\xc3\xb4ng tin cho b\xc3\xa1o ch\xc3\xad, th\xc3\xa0nh ph\xe1\xbb\x91 \xc4\x91\xc3\xa3
+                                c\xc3\xb3 Th\xc3\xb4ng c\xc3\xa1o b\xc3\xa1o ch\xc3\xad \xc4\x91\xc3\xa3 g\xe1\xbb\xadi
+                                h\xe1\xbb\x93i 4h53\' chi\xe1\xbb\x81u ng\xc3\xa0y 12/4/2021, tuy nhi\xc3\xaan,
+                                n\xe1\xbb\x99i dung \xc4\x91\xc3\xadnh k\xc3\xa8m ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c.
+                                Th\xc3\xa0nh ph\xe1\xbb\x91 xin ph\xc3\xa9p thu h\xe1\xbb\x93i th\xc3\xb4ng c\xc3\xa1o
+                                b\xc3\xa1o ch\xc3\xad \xc4\x91\xc3\xa3 g\xe1\xbb\xadi v\xc3\xa0 g\xe1\xbb\xadi
+                                l\xe1\xba\xa1i th\xc3\xb4ng tin m\xe1\xbb\x9bi".</em></p>\n<p>UBND TP Hu\xe1\xba\xbf cho
+                            bi\xe1\xba\xbft nguy\xc3\xaan nh\xc3\xa2n l\xc3\xa0 <em>"do s\xc6\xa1 su\xe1\xba\xa5t trong
+                                kh\xc3\xa2u chuy\xe1\xbb\x83n file v\xc4\x83n b\xe1\xba\xa3n, n\xe1\xbb\x99i dung
+                                \xc4\x91\xc6\xb0\xe1\xbb\xa3c g\xe1\xbb\xadi \xc4\x91\xe1\xba\xbfn c\xc3\xa1c b\xc3\xa1o
+                                l\xc3\xa0 file v\xc4\x83n b\xe1\xba\xa3n tham m\xc6\xb0u c\xe1\xbb\xa7a chuy\xc3\xaan
+                                vi\xc3\xaan so\xe1\xba\xa1n th\xe1\xba\xa3o, ch\xc6\xb0a ph\xe1\xba\xa3i l\xc3\xa0
+                                th\xc3\xb4ng c\xc3\xa1o b\xc3\xa1o ch\xc3\xad ch\xc3\xadnh th\xe1\xbb\xa9c
+                                \xc4\x91\xc6\xb0\xe1\xbb\xa3c ph\xc3\xaa duy\xe1\xbb\x87t c\xe1\xbb\xa7a UBND TP
+                                Hu\xe1\xba\xbf".</em></p>\n<p>Theo th\xc3\xb4ng tin m\xe1\xbb\x9bi m\xc3\xa0 UBND TP
+                            Hu\xe1\xba\xbf cung c\xe1\xba\xa5p, c\xc3\xa1c ph\xe1\xba\xa7n l\xe1\xbb\x8bch
+                            s\xe1\xbb\xad, nguy\xc3\xaan nh\xc3\xa2n giao \xc4\x91\xe1\xba\xa5t cho \xc3\xb4ng C\xc6\xb0
+                            \xc4\x91\xc3\xa3 b\xe1\xbb\x8b l\xc6\xb0\xe1\xbb\xa3c b\xe1\xbb\x8f, ch\xe1\xbb\x89
+                            c\xc3\xb2n l\xe1\xba\xa1i ph\xe1\xba\xa7n cu\xe1\xbb\x91i c\xc3\xb9ng nh\xc6\xb0 trong
+                            v\xc4\x83n b\xe1\xba\xa3n tr\xc6\xb0\xe1\xbb\x9bc l\xc3\xa0 c\xc3\xb4ng vi\xe1\xbb\x87c
+                            x\xe1\xbb\xad l\xc3\xbd c\xe1\xbb\xa7a c\xc6\xa1 quan ch\xe1\xbb\xa9c n\xc4\x83ng sau khi
+                            c\xc3\xb3 k\xe1\xba\xbft lu\xe1\xba\xadn c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh
+                            ph\xe1\xbb\xa7.</p>\n<p>V\xc4\x83n b\xe1\xba\xa3n m\xe1\xbb\x9bi n\xc3\xa0y c\xc3\xb3
+                            n\xe1\xbb\x99i dung: <em>"Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7 \xc4\x91\xc3\xa3 c\xc3\xb3
+                                k\xe1\xba\xbft lu\xe1\xba\xadn t\xe1\xba\xa1i K\xe1\xba\xbft lu\xe1\xba\xadn thanh tra
+                                s\xe1\xbb\x91 355/KL-TTCP ng\xc3\xa0y 04/3/2021, theo \xc4\x91\xc3\xb3 \xc4\x91\xc3\xa3
+                                y\xc3\xaau c\xe1\xba\xa7u Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch UBND t\xe1\xbb\x89nh
+                                ch\xe1\xbb\x89 \xc4\x91\xe1\xba\xa1o Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch UBND th\xc3\xa0nh
+                                ph\xe1\xbb\x91 ki\xe1\xbb\x83m tra l\xe1\xba\xa1i, x\xc3\xa1c \xc4\x91\xe1\xbb\x8bnh
+                                \xc4\x91\xc3\xbang, \xc4\x91\xe1\xbb\xa7 ti\xe1\xbb\x81n s\xe1\xbb\xad d\xe1\xbb\xa5ng
+                                \xc4\x91\xe1\xba\xa5t theo quy \xc4\x91\xe1\xbb\x8bnh \xc4\x91\xe1\xbb\x91i
+                                v\xe1\xbb\x9bi l\xc3\xb4 \xc4\x91\xe1\xba\xa5t A7 c\xc3\xb3 di\xe1\xbb\x87n t\xc3\xadch
+                                195,2m2 t\xe1\xba\xa1i ph\xc6\xb0\xe1\xbb\x9dng An \xc4\x90\xc3\xb4ng, TP Hu\xe1\xba\xbf
+                                \xc4\x91\xc3\xa3 giao cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0 \xc4\x91\xe1\xbb\x83
+                                truy thu v\xe1\xbb\x81 ng\xc3\xa2n s\xc3\xa1ch nh\xc3\xa0 n\xc6\xb0\xe1\xbb\x9bc
+                                v\xc3\xa0 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m, x\xe1\xbb\xad l\xc3\xbd k\xe1\xbb\xb7
+                                lu\xe1\xba\xadt nghi\xc3\xaam t\xc3\xbac tr\xc3\xa1ch nhi\xe1\xbb\x87m c\xe1\xbb\xa7a
+                                c\xc3\xa1c t\xe1\xbb\x95 ch\xe1\xbb\xa9c, c\xc3\xa1 nh\xc3\xa2n c\xc3\xb3 li\xc3\xaan
+                                quan \xc4\x91\xe1\xba\xbfn sai ph\xe1\xba\xa1m trong vi\xe1\xbb\x87c giao
+                                \xc4\x91\xe1\xba\xa5t v\xc3\xa0 t\xc3\xadnh ti\xe1\xbb\x81n s\xe1\xbb\xad
+                                d\xe1\xbb\xa5ng \xc4\x91\xe1\xba\xa5t \xc4\x91\xe1\xbb\x91i v\xe1\xbb\x9bi l\xc3\xb4
+                                \xc4\x91\xe1\xba\xa5t tr\xc3\xaan.</em></p>\n<p><em>Ng\xc3\xa0y 26/3/2021, UBND
+                            t\xe1\xbb\x89nh c\xc3\xb3 Th\xc3\xb4ng b\xc3\xa1o s\xe1\xbb\x91 132/TB-UBND v\xe1\xbb\x81
+                            k\xe1\xba\xbft lu\xe1\xba\xadn c\xe1\xbb\xa7a \xc4\x91\xe1\xbb\x93ng ch\xc3\xad Phan
+                            Ng\xe1\xbb\x8dc Th\xe1\xbb\x8d - Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch UBND t\xe1\xbb\x89nh
+                            t\xe1\xba\xa1i cu\xe1\xbb\x99c h\xe1\xbb\x8dp nghe b\xc3\xa1o c\xc3\xa1o tri\xe1\xbb\x83n
+                            khai th\xe1\xbb\xb1c hi\xe1\xbb\x87n K\xe1\xba\xbft lu\xe1\xba\xadn s\xe1\xbb\x91
+                            355/KL-TTCP ng\xc3\xa0y 04/3/2021 c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7.
+                            Th\xe1\xbb\xb1c hi\xe1\xbb\x87n \xc3\xbd ki\xe1\xba\xbfn ch\xe1\xbb\x89
+                            \xc4\x91\xe1\xba\xa1o c\xe1\xbb\xa7a UBND t\xe1\xbb\x89nh t\xe1\xba\xa1i Th\xc3\xb4ng
+                            b\xc3\xa1o n\xc3\xaau tr\xc3\xaan; \xc4\x91\xe1\xbb\x93ng th\xe1\xbb\x9di,
+                            \xc4\x91\xe1\xbb\x83 kh\xe1\xba\xafc ph\xe1\xbb\xa5c, s\xe1\xbb\xada ch\xe1\xbb\xafa
+                            c\xc3\xa1c t\xe1\xbb\x93n t\xe1\xba\xa1i, h\xe1\xba\xa1n ch\xe1\xba\xbf \xc4\x91\xc3\xa3
+                            \xc4\x91\xc6\xb0\xe1\xbb\xa3c Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7 n\xc3\xaau ra
+                            t\xe1\xba\xa1i k\xe1\xba\xbft lu\xe1\xba\xadn; UBND th\xc3\xa0nh ph\xe1\xbb\x91
+                            Hu\xe1\xba\xbf \xc4\x91\xc3\xa3 ban h\xc3\xa0nh K\xe1\xba\xbf ho\xe1\xba\xa1ch s\xe1\xbb\x91
+                            1900/ KH-UBND v\xe1\xbb\x81 kh\xe1\xba\xafc ph\xe1\xbb\xa5c K\xe1\xba\xbft lu\xe1\xba\xadn
+                            thanh tra s\xe1\xbb\x91 355/KL-TTCP ng\xc3\xa0y 04/3/2021 c\xe1\xbb\xa7a Thanh tra
+                            Ch\xc3\xadnh ph\xe1\xbb\xa7, theo \xc4\x91\xc3\xb3 \xc4\x91\xc3\xa3 giao cho Trung
+                            t\xc3\xa2m ph\xc3\xa1t tri\xe1\xbb\x83n qu\xe1\xbb\xb9 \xc4\x91\xe1\xba\xa5t th\xc3\xa0nh
+                            ph\xe1\xbb\x91 Hu\xe1\xba\xbf ch\xe1\xbb\xa7 tr\xc3\xac, ph\xe1\xbb\x91i h\xe1\xbb\xa3p
+                            v\xe1\xbb\x9bi Ph\xc3\xb2ng T\xc3\xa0i nguy\xc3\xaan M\xc3\xb4i tr\xc6\xb0\xe1\xbb\x9dng,
+                            Ph\xc3\xb2ng T\xc3\xa0i ch\xc3\xadnh K\xe1\xba\xbf ho\xe1\xba\xa1ch th\xc3\xa0nh
+                            ph\xe1\xbb\x91 v\xc3\xa0 c\xc3\xa1c \xc4\x91\xc6\xa1n v\xe1\xbb\x8b li\xc3\xaan quan
+                            ki\xe1\xbb\x83m tra l\xe1\xba\xa1i, x\xc3\xa1c \xc4\x91\xe1\xbb\x8bnh \xc4\x91\xc3\xbang,
+                            \xc4\x91\xe1\xbb\xa7 s\xe1\xbb\x91 ti\xe1\xbb\x81n s\xe1\xbb\xad d\xe1\xbb\xa5ng
+                            \xc4\x91\xe1\xba\xa5t theo quy \xc4\x91\xe1\xbb\x8bnh.</em></p>\n<p><em>Hi\xe1\xbb\x87n nay,
+                            c\xc3\xa1c \xc4\x91\xc6\xa1n v\xe1\xbb\x8b \xc4\x91ang tri\xe1\xbb\x83n khai th\xe1\xbb\xb1c
+                            hi\xe1\xbb\x87n, UBND th\xc3\xa0nh ph\xe1\xbb\x91 s\xe1\xba\xbd cung c\xe1\xba\xa5p
+                            th\xc3\xb4ng tin ti\xe1\xba\xbfp theo cho c\xc3\xa1c c\xc6\xa1 quan b\xc3\xa1o
+                            ch\xc3\xad".</em></p>\n
+                            <figure class="image" contenteditable="false"><img
+                                    title="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y - 1"
+                                    src="https://icdn.dantri.com.vn/thumb_w/640/2021/04/13/new-microsoft-word-documentdocx-1618288750464.jpeg"
+                                    alt="Thu h\xe1\xbb\x93i th\xc3\xb4ng tin ch\xc6\xb0a ch\xc3\xadnh x\xc3\xa1c v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y - 1"
+                                    data-original="https://icdn.dantri.com.vn/2021/04/13/new-microsoft-word-documentdocx-1618288750464.jpeg"
+                                    data-photo-id="1329177" data-width="640" data-height="500">\n
+                                <figcaption>\n<p>L\xc3\xb4 \xc4\x91\xe1\xba\xa5t 2 m\xe1\xba\xb7t ti\xe1\xbb\x81n
+                                    kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao
+                                    cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf -
+                                    \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0.</p>\n
+                                </figcaption>
+                                \n
+                            </figure>
+                            \n<p>Nh\xc6\xb0 <em>D\xc3\xa2n tr\xc3\xad</em> th\xc3\xb4ng tin, trong s\xe1\xbb\x91
+                                c\xc3\xa1c sai ph\xe1\xba\xa1m li\xc3\xaan quan \xc4\x91\xe1\xba\xa5t \xc4\x91ai
+                                \xe1\xbb\x9f t\xe1\xbb\x89nh Th\xe1\xbb\xaba Thi\xc3\xaan Hu\xe1\xba\xbf, Thanh tra
+                                Ch\xc3\xadnh ph\xe1\xbb\xa7 c\xc3\xb3 n\xc3\xaau vi\xe1\xbb\x87c Trung t\xc3\xa2m
+                                Ph\xc3\xa1t tri\xe1\xbb\x83n qu\xe1\xbb\xb9 \xc4\x91\xe1\xba\xa5t TP Hu\xe1\xba\xbf
+                                kh\xc3\xb4ng th\xe1\xbb\xb1c hi\xe1\xbb\x87n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 theo
+                                k\xe1\xba\xbf ho\xe1\xba\xa1ch, c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n t\xe1\xba\xa1m
+                                d\xe1\xbb\xabng \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 v\xc3\xa0 t\xe1\xbb\xb1 \xc3\xbd
+                                \xc4\x91i\xe1\xbb\x81u ch\xe1\xbb\x89nh, th\xc3\xaam di\xe1\xbb\x87n t\xc3\xadch
+                                l\xc3\xb4 A7 (t\xe1\xbb\xab 193,2 m2 l\xc3\xaan 195,2 m2) \xc4\x91\xe1\xbb\x83
+                                tr\xc3\xacnh UBND TP Hu\xe1\xba\xbf ban h\xc3\xa0nh quy\xe1\xba\xbft
+                                \xc4\x91\xe1\xbb\x8bnh giao \xc4\x91\xe1\xba\xa5t cho \xc3\xb4ng Hu\xe1\xbb\xb3nh
+                                C\xc6\xb0, nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y TP
+                                Hu\xe1\xba\xbf.</p>\n<p>L\xc3\xb4 \xc4\x91\xe1\xba\xa5t A7 (n\xe1\xba\xb1m trong khu
+                                \xc4\x91\xe1\xba\xa5t xen gh\xc3\xa9p t\xe1\xbb\x95 13, khu v\xe1\xbb\xb1c 5,
+                                ph\xc6\xb0\xe1\xbb\x9dng An \xc4\x90\xc3\xb4ng, TP Hu\xe1\xba\xbf) n\xe1\xba\xb1m trong
+                                danh s\xc3\xa1ch \xc4\x91\xe1\xbb\x83 \xc4\x91\xc6\xb0a ra \xc4\x91\xe1\xba\xa5u
+                                gi\xc3\xa1 theo Quy\xe1\xba\xbft \xc4\x91\xe1\xbb\x8bnh s\xe1\xbb\x91
+                                3937/Q\xc4\x90-UBND ng\xc3\xa0y 4/5/2016 v\xc3\xa0 Quy\xe1\xba\xbft
+                                \xc4\x91\xe1\xbb\x8bnh s\xe1\xbb\x91 497/Q\xc4\x90-UBND ng\xc3\xa0y 6/2/2017
+                                c\xe1\xbb\xa7a Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch UBND TP Hu\xe1\xba\xbf.</p>\n<p>Theo
+                                k\xe1\xba\xbft lu\xe1\xba\xadn c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7,
+                                vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t A7 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh
+                                C\xc6\xb0 v\xc3\xa0o n\xc4\x83m 2017 nh\xc6\xb0ng l\xe1\xba\xa5y gi\xc3\xa1 x\xc3\xa1c
+                                \xc4\x91\xe1\xbb\x8bnh kh\xe1\xbb\x9fi \xc4\x91i\xe1\xbb\x83m \xc4\x91\xe1\xba\xa5u
+                                gi\xc3\xa1 n\xc4\x83m 2016 \xc4\x91\xe1\xbb\x83 t\xc3\xadnh ti\xe1\xbb\x81n
+                                ph\xe1\xba\xa3i n\xe1\xbb\x99p l\xc3\xa0 th\xe1\xbb\x83 hi\xe1\xbb\x87n s\xe1\xbb\xb1
+                                t\xc3\xb9y ti\xe1\xbb\x87n, c\xc3\xb3 d\xe1\xba\xa5u hi\xe1\xbb\x87u l\xc3\xa0m
+                                l\xe1\xbb\xa3i cho c\xc3\xa1 nh\xc3\xa2n, l\xc3\xa0m th\xe1\xba\xa5t thu ng\xc3\xa2n
+                                s\xc3\xa1ch Nh\xc3\xa0 n\xc6\xb0\xe1\xbb\x9bc.</p>\n<p>Vi\xe1\xbb\x87c giao l\xc3\xb4
+                                \xc4\x91\xe1\xba\xa5t A7 kh\xc3\xb4ng c\xc4\x83n c\xe1\xbb\xa9 v\xc3\xa0o k\xe1\xba\xbf
+                                ho\xe1\xba\xa1ch s\xe1\xbb\xad d\xe1\xbb\xa5ng \xc4\x91\xe1\xba\xa5t h\xc3\xa0ng
+                                n\xc4\x83m l\xc3\xa0 vi ph\xe1\xba\xa1m \xc4\x90i\xe1\xbb\x81u 52 Lu\xe1\xba\xadt
+                                \xc4\x90\xe1\xba\xa5t \xc4\x91ai 2013. Trung t\xc3\xa2m Ph\xc3\xa1t tri\xe1\xbb\x83n
+                                qu\xe1\xbb\xb9 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc3\xa3 k\xc3\xbd h\xe1\xbb\xa3p
+                                \xc4\x91\xe1\xbb\x93ng chuy\xe1\xbb\x83n nh\xc6\xb0\xe1\xbb\xa3ng quy\xe1\xbb\x81n
+                                s\xe1\xbb\xad d\xe1\xbb\xa5ng \xc4\x91\xe1\xba\xa5t \xc4\x91\xe1\xbb\x91i v\xe1\xbb\x9bi
+                                \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0 l\xc3\xa0 tr\xc3\xa1i v\xe1\xbb\x9bi quy
+                                \xc4\x91\xe1\xbb\x8bnh t\xe1\xba\xa1i kho\xe1\xba\xa3n 2 \xc4\x90i\xe1\xbb\x81u 59
+                                v\xc3\xa0 \xc4\x90i\xe1\xbb\x81u 188 Lu\xe1\xba\xadt \xc4\x90\xe1\xba\xa5t \xc4\x91ai
+                                2013.</p>\n<p>Qua k\xe1\xba\xbft lu\xe1\xba\xadn c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh
+                                ph\xe1\xbb\xa7 ch\xe1\xbb\x89 r\xc3\xb5 tr\xc3\xa1ch nhi\xe1\xbb\x87m
+                                \xc4\x91\xe1\xbb\x83 x\xe1\xba\xa3y ra c\xc3\xa1c vi ph\xe1\xba\xa1m tr\xc3\xaan
+                                thu\xe1\xbb\x99c v\xe1\xbb\x81 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch UBND TP Hu\xe1\xba\xbf,
+                                Gi\xc3\xa1m \xc4\x91\xe1\xbb\x91c Trung t\xc3\xa2m Ph\xc3\xa1t tri\xe1\xbb\x83n
+                                qu\xe1\xbb\xb9 \xc4\x91\xe1\xba\xa5t, Tr\xc6\xb0\xe1\xbb\x9fng ph\xc3\xb2ng T\xc3\xa0i
+                                ch\xc3\xadnh K\xe1\xba\xbf ho\xe1\xba\xa1ch TP Hu\xe1\xba\xbf v\xc3\xa0 c\xc3\xa1c
+                                t\xe1\xbb\x95 ch\xe1\xbb\xa9c, c\xc3\xa1 nh\xc3\xa2n li\xc3\xaan quan qua c\xc3\xa1c
+                                th\xe1\xbb\x9di k\xe1\xbb\xb3.</p>\n<p>Trao \xc4\x91\xe1\xbb\x95i v\xe1\xbb\x9bi PV,
+                                \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh
+                                \xe1\xbb\xa7y Hu\xe1\xba\xbf cho bi\xe1\xba\xbft, do \xc4\x91\xc6\xb0\xe1\xbb\xa3c
+                                h\xc6\xb0\xe1\xbb\x9fng ch\xc3\xadnh s\xc3\xa1ch c\xc3\xa1n b\xe1\xbb\x99 lu\xc3\xa2n
+                                chuy\xe1\xbb\x83n n\xc3\xaan \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t
+                                kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 theo lu\xe1\xba\xadt
+                                \xc4\x91\xe1\xba\xa5t \xc4\x91ai.</p>\n<p>"Tuy nhi\xc3\xaan, k\xe1\xba\xbft
+                                lu\xe1\xba\xadn Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7 l\xe1\xba\xa1i kh\xc3\xb4ng cho
+                                t\xc3\xb4i h\xc6\xb0\xe1\xbb\x9fng ch\xc3\xadnh s\xc3\xa1ch \xc4\x91\xc3\xb3 m\xc3\xa0
+                                b\xe1\xba\xaft mua" - nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y
+                                Hu\xe1\xba\xbf n\xc3\xb3i.</p>\n<p>Hi\xe1\xbb\x87n t\xe1\xba\xa1i, \xc3\xb4ng C\xc6\xb0
+                                ch\xc6\xb0a nh\xe1\xba\xadn \xc4\x91\xc6\xb0\xe1\xbb\xa3c th\xc3\xb4ng tin t\xe1\xbb\xab
+                                UBND TP Hu\xe1\xba\xbf m\xe1\xbb\x9di l\xc3\xa0m vi\xe1\xbb\x87c li\xc3\xaan quan
+                                \xc4\x91\xe1\xba\xbfn l\xc3\xb4 \xc4\x91\xe1\xba\xa5t A7 theo k\xe1\xba\xbft
+                                lu\xe1\xba\xadn c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7. \xc3\x94ng
+                                C\xc6\xb0 c\xc5\xa9ng mong mu\xe1\xbb\x91n c\xc6\xa1 quan ch\xe1\xbb\xa9c n\xc4\x83ng
+                                x\xe1\xbb\xad l\xc3\xbd s\xe1\xbb\xb1 vi\xe1\xbb\x87c theo \xc4\x91\xc3\xbang
+                                lu\xe1\xba\xadt.</p>\n<p style="text-align: right;"><strong>\xc4\x90\xe1\xba\xa1i
+                                D\xc6\xb0\xc6\xa1ng</strong></p>\r\n
+                        </div>
+                        \r\n \r\n
+                        <div data-tin-lien-quan></div>
+                        \r\n
+                        <div id="tin-lien-quan">\r\n\r\n
+                            <section class="dt-section dt-section--simple mt-3">\r\n
+                                <header class="dt-section__header">\r\n
+                                    <div class="dt-section__title">\r\nTin li\xc3\xaan quan</div>
+                                    \r\n
+                                </header>
+                                \r\n
+                                <div class="dt-section__body">\r\n
+                                    <ul class="dt-news__links">\r\n
+                                        <li>\r\n <h3 class="dt-news__link">\r\n <a data-utm="Article|Box_TinLienQuan|1"
+                                                                                   title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?"
+                                                                                   href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-noi-gi-khi-duoc-giao-dat-khong-qua-dau-gia-20210412192230134.htm">Nguy\xc3\xaan
+                                            B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i
+                                            g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t
+                                            kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?</a>\r\n </h3>\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n <h3 class="dt-news__link">\r\n <a data-utm="Article|Box_TinLienQuan|2"
+                                                                                   title="TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y"
+                                                                                   href="/xa-hoi/tp-hue-thong-tin-ve-lo-dat-duoc-giao-cho-nguyen-bi-thu-thanh-uy-20210412194159380.htm">TP
+                                            Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4
+                                            \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan
+                                            B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y</a>\r\n </h3>\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n <h3 class="dt-news__link">\r\n <a data-utm="Article|Box_TinLienQuan|3"
+                                                                                   title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1"
+                                                                                   href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-duoc-giao-lo-dat-khong-qua-dau-gia-20210411215641095.htm">Nguy\xc3\xaan
+                                            B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf
+                                            \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t
+                                            kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1</a>\r\n </h3>\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n <h3 class="dt-news__link">\r\n <a data-utm="Article|Box_TinLienQuan|4"
+                                                                                   title="Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf"
+                                                                                   href="/xa-hoi/that-thoat-nhieu-ty-dong-tu-ban-dau-gia-dat-cong-tai-tp-hue-20210412150650087.htm">Th\xe1\xba\xa5t
+                                            tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng
+                                            t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1
+                                            \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf</a>\r\n
+                                        </h3>\r\n
+                                        </li>
+                                        \r\n
+                                    </ul>
+                                    \r\n
+                                </div>
+                                \r\n
+                            </section>
+                            \r\n
+                        </div>
+                        \r\n\r\n\r\n \r\n
+                        <div data-dong-du-kien></div>
+                        \r\n
+                        <div id="dong-du-kien">\r\n</div>
+                        \r\n
+                        <div class="dt-news__tags">\r\n
+                            <div class="dt-news__tag-label">T\xe1\xbb\xab kh\xc3\xb3a:</div>
+                            \r\n
+                            <ul class="dt-news__tag-list">\r\n
+                                <li>\r\n <h4 class="dt-news__tag">\r\n <a data-utm="Tag_HuynhCu|Box_Tag|1"
+                                                                          title="Hu\xe1\xbb\xb3nh C\xc6\xb0"
+                                                                          href="/huynh-cu.tag">Hu\xe1\xbb\xb3nh
+                                    C\xc6\xb0</a>\r\n </h4>\r\n
+                                </li>
+                                \r\n
+                                <li>\r\n <h4 class="dt-news__tag">\r\n <a data-utm="Tag_BiThuThanhUyHue|Box_Tag|2"
+                                                                          title="B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf"
+                                                                          href="/bi-thu-thanh-uy-hue.tag">B\xc3\xad
+                                    th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf</a>\r\n </h4>\r\n
+                                </li>
+                                \r\n
+                                <li>\r\n <h4 class="dt-news__tag">\r\n <a data-utm="Tag_GiaoDatKhongQuaDauGia|Box_Tag|3"
+                                                                          title="giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1"
+                                                                          href="/giao-dat-khong-qua-dau-gia.tag">giao
+                                    \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1</a>\r\n
+                                </h4>\r\n
+                                </li>
+                                \r\n
+                                <li>\r\n <h4 class="dt-news__tag">\r\n <a data-utm="Tag_ThanhTraChinhPhu|Box_Tag|4"
+                                                                          title="Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7"
+                                                                          href="/thanh-tra-chinh-phu.tag">Thanh tra
+                                    Ch\xc3\xadnh ph\xe1\xbb\xa7</a>\r\n </h4>\r\n
+                                </li>
+                                \r\n
+                            </ul>
+                            \r\n
+                        </div>
+                        \r\n \r\n
+                        <div class="dt-news__comment" id="dt-news__comment">\r\n
+                            <div comment-widget\r\n object-id="20210413114347761" \r\n zone-id="20">\r\n</div>
+                            \r\n
+                        </div>
+                        \r\n\r\n
+                        <div id="dang-quan-tam">\r\n \r\n\r\n
+                            <section class="dt-section dt-section--primary dt-section--fit mt-4">\r\n
+                                <header class="dt-section__header">\r\n
+                                    <div class="dt-section__title text-uppercase">\r\n \xc4\x90\xc3\xa1ng quan
+                                        t\xc3\xa2m\r\n
+                                    </div>
+                                    \r\n
+                                </header>
+                                \r\n
+                                <div class="dt-section__body">\r\n
+                                    <ul class="dt-list dt-list--lg">\r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|1" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/tp-hue-thong-tin-ve-lo-dat-duoc-giao-cho-nguyen-bi-thu-thanh-uy-20210412194159380.htm"
+                                                               \r\n
+                                                               title="TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/12/new-microsoft-word-document-1-docx-1618231165836.jpeg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|1" \r\n
+                                                        href="/xa-hoi/tp-hue-thong-tin-ve-lo-dat-duoc-giao-cho-nguyen-bi-thu-thanh-uy-20210412194159380.htm"
+                                                        \r\n
+                                                        title="TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y">\r\n
+                                                    \r\n TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4
+                                                    \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho
+                                                    nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y
+                                                    \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|1" class="news-item__sapo"
+                                                        title="TP Hu\xe1\xba\xbf th\xc3\xb4ng tin v\xe1\xbb\x81 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y"
+                                                        href="/xa-hoi/tp-hue-thong-tin-ve-lo-dat-duoc-giao-cho-nguyen-bi-thu-thanh-uy-20210412194159380.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Chi\xe1\xbb\x81u t\xe1\xbb\x91i 12/4, UBND TP
+                                                    Hu\xe1\xba\xbf \xc4\x91\xc3\xa3 th\xc3\xb4ng tin ch\xc3\xadnh
+                                                    th\xe1\xbb\xa9c v\xe1\xbb\xa5 l\xc3\xb4 \xc4\x91\xe1\xba\xa5t
+                                                    kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1
+                                                    \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao cho \xc3\xb4ng Hu\xe1\xbb\xb3nh
+                                                    C\xc6\xb0, nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh
+                                                    \xe1\xbb\xa7y Hu\xe1\xba\xbf.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|1" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">16 gi\xe1\xbb\x9d tr\xc6\xb0\xe1\xbb\x9bc</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|2" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-duoc-giao-lo-dat-khong-qua-dau-gia-20210411215641095.htm"
+                                                               \r\n
+                                                               title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/11/nguyen-bi-thu-thanh-uy-hue-duoc-giao-lo-dat-khong-qua-dau-gia-1618152881495.jpeg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|2" \r\n
+                                                        href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-duoc-giao-lo-dat-khong-qua-dau-gia-20210411215641095.htm"
+                                                        \r\n
+                                                        title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1">\r\n
+                                                    \r\n Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y
+                                                    Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4
+                                                    \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u
+                                                    gi\xc3\xa1 <i class="news-title-icon ico-news-type-img"> </i> \r\n
+                                                    \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|2" class="news-item__sapo"
+                                                        title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1"
+                                                        href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-duoc-giao-lo-dat-khong-qua-dau-gia-20210411215641095.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Ng\xc3\xa0y 11/4, UBND TP Hu\xe1\xba\xbf cho
+                                                    bi\xe1\xba\xbft v\xe1\xbb\xaba ra v\xc4\x83n b\xe1\xba\xa3n
+                                                    h\xc6\xb0\xe1\xbb\x9bng d\xe1\xba\xabn th\xe1\xbb\xb1c
+                                                    hi\xe1\xbb\x87n k\xe1\xba\xbf ho\xe1\xba\xa1ch kh\xe1\xba\xafc
+                                                    ph\xe1\xbb\xa5c c\xc3\xa1c v\xe1\xba\xa5n \xc4\x91\xe1\xbb\x81 sai
+                                                    ph\xe1\xba\xa1m li\xc3\xaan quan \xc4\x91\xe1\xba\xa5t \xc4\x91ai
+                                                    tr\xc3\xaan \xc4\x91\xe1\xbb\x8ba b\xc3\xa0n qua k\xe1\xba\xbft
+                                                    lu\xe1\xba\xadn c\xe1\xbb\xa7a Thanh tra Ch\xc3\xadnh
+                                                    ph\xe1\xbb\xa7.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|2" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 Hai 12/04/2021 - 07:34</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|3" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-noi-gi-khi-duoc-giao-dat-khong-qua-dau-gia-20210412192230134.htm"
+                                                               \r\n
+                                                               title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/12/nguyen-bi-thu-thanh-uy-noi-gi-khi-duoc-giao-dat-khong-qua-dau-gia-1618229990713.jpeg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|3" \r\n
+                                                        href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-noi-gi-khi-duoc-giao-dat-khong-qua-dau-gia-20210412192230134.htm"
+                                                        \r\n
+                                                        title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?">\r\n
+                                                    \r\n Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y
+                                                    Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi
+                                                    \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t
+                                                    kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1? <i
+                                                            class="news-title-icon ico-news-type-img"> </i> \r\n
+                                                    \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|3" class="news-item__sapo"
+                                                        title="Nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y Hu\xe1\xba\xbf n\xc3\xb3i g\xc3\xac khi \xc4\x91\xc6\xb0\xe1\xbb\xa3c giao \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1?"
+                                                        href="/xa-hoi/nguyen-bi-thu-thanh-uy-hue-noi-gi-khi-duoc-giao-dat-khong-qua-dau-gia-20210412192230134.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Trao \xc4\x91\xe1\xbb\x95i v\xe1\xbb\x9bi
+                                                    D\xc3\xa2n tr\xc3\xad ng\xc3\xa0y 12/4, \xc3\xb4ng Hu\xe1\xbb\xb3nh
+                                                    C\xc6\xb0, nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh
+                                                    \xe1\xbb\xa7y Hu\xe1\xba\xbf cho bi\xe1\xba\xbft \xc3\xb4ng
+                                                    \xc4\x91\xc6\xb0\xe1\xbb\xa3c h\xc6\xb0\xe1\xbb\x9fng ch\xc3\xadnh
+                                                    s\xc3\xa1ch c\xc3\xa1n b\xe1\xbb\x99 lu\xc3\xa2n chuy\xe1\xbb\x83n
+                                                    khi giao \xc4\x91\xe1\xba\xa5t.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|3" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">21 gi\xe1\xbb\x9d tr\xc6\xb0\xe1\xbb\x9bc</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|4" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/that-thoat-nhieu-ty-dong-tu-ban-dau-gia-dat-cong-tai-tp-hue-20210412150650087.htm"
+                                                               \r\n
+                                                               title="Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/12/that-thoat-nhieu-ty-dong-tu-ban-dau-gia-dat-cong-tai-tp-hue-1618214661399.jpeg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|4" \r\n
+                                                        href="/xa-hoi/that-thoat-nhieu-ty-dong-tu-ban-dau-gia-dat-cong-tai-tp-hue-20210412150650087.htm"
+                                                        \r\n
+                                                        title="Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf">\r\n
+                                                    \r\n Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7
+                                                    \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n
+                                                    \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng
+                                                    t\xe1\xba\xa1i TP Hu\xe1\xba\xbf \r\n</a>\r\n\r\n\r\n \r\n \r\n
+                                                </h3>\r\n \r\n <a data-utm="Article|Box_DangQuanTam|4"
+                                                                  class="news-item__sapo"
+                                                                  title="Th\xe1\xba\xa5t tho\xc3\xa1t nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng t\xe1\xba\xa1i TP Hu\xe1\xba\xbf"
+                                                                  href="/xa-hoi/that-thoat-nhieu-ty-dong-tu-ban-dau-gia-dat-cong-tai-tp-hue-20210412150650087.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Ngo\xc3\xa0i l\xc3\xb4 \xc4\x91\xe1\xba\xa5t
+                                                    b\xc3\xa1n kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho
+                                                    nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y
+                                                    Hu\xe1\xba\xbf n\xc4\x83m 2017 g\xc3\xa2y th\xe1\xba\xa5t
+                                                    tho\xc3\xa1t ng\xc3\xa2n s\xc3\xa1ch, TP Hu\xe1\xba\xbf c\xc3\xb2n
+                                                    l\xc3\xa0m th\xe1\xba\xa5t thu s\xe1\xbb\x91 ti\xe1\xbb\x81n
+                                                    nhi\xe1\xbb\x81u t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng t\xe1\xbb\xab
+                                                    vi\xe1\xbb\x87c b\xc3\xa1n \xc4\x91\xe1\xba\xa5u gi\xc3\xa1
+                                                    \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng, cho thu\xc3\xaa
+                                                    \xc4\x91\xe1\xba\xa5t c\xc3\xb4ng.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|4" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 Hai 12/04/2021 - 15:58</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n</li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right news-item--large">
+                                                \r\n\r\n <h3 class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                    data-utm="Article|Box_DangQuanTam|5" \r\n
+                                                    href="/bat-dong-san/quang-ninh-dong-thai-manh-tay-voi-con-sot-dat-ham-hap-20210408163028917.htm"
+                                                    \r\n
+                                                    title="Qu\xe1\xba\xa3ng Ninh: \xc4\x90\xe1\xbb\x99ng th\xc3\xa1i m\xe1\xba\xa1nh tay v\xe1\xbb\x9bi &quot;c\xc6\xa1n s\xe1\xbb\x91t&quot; \xc4\x91\xe1\xba\xa5t h\xe1\xba\xa7m h\xe1\xba\xadp">\r\n
+                                                \r\n Qu\xe1\xba\xa3ng Ninh: \xc4\x90\xe1\xbb\x99ng th\xc3\xa1i
+                                                m\xe1\xba\xa1nh tay v\xe1\xbb\x9bi &quot;c\xc6\xa1n s\xe1\xbb\x91t&quot;
+                                                \xc4\x91\xe1\xba\xa5t h\xe1\xba\xa7m h\xe1\xba\xadp \r\n</a>\r\n\r\n\r\n
+                                                \r\n \r\n </h3>\r\n \r\n \r\n\r\n\r\n<a
+                                                    data-utm="Article|Box_DangQuanTam|5" \r\n class="news-item__avatar"
+                                                    href="/bat-dong-san/quang-ninh-dong-thai-manh-tay-voi-con-sot-dat-ham-hap-20210408163028917.htm"
+                                                    \r\n
+                                                    title="Qu\xe1\xba\xa3ng Ninh: \xc4\x90\xe1\xbb\x99ng th\xc3\xa1i m\xe1\xba\xa1nh tay v\xe1\xbb\x9bi &quot;c\xc6\xa1n s\xe1\xbb\x91t&quot; \xc4\x91\xe1\xba\xa5t h\xe1\xba\xa7m h\xe1\xba\xadp">\r\n
+                                                \r\n \r\n \r\n
+                                                <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                        alt="Qu\xe1\xba\xa3ng Ninh: \xc4\x90\xe1\xbb\x99ng th\xc3\xa1i m\xe1\xba\xa1nh tay v\xe1\xbb\x9bi &quot;c\xc6\xa1n s\xe1\xbb\x91t&quot; \xc4\x91\xe1\xba\xa5t h\xe1\xba\xa7m h\xe1\xba\xadp"
+                                                        class=" no-img"
+                                                        lazy-src="https://icdn.dantri.com.vn/zoom/920_612/2021/04/08/khukinhtevandon-1-docx-1604031246362-1617873775057.jpeg"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                </div>
+                                                \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|5" class="news-item__sapo"
+                                                        title="Qu\xe1\xba\xa3ng Ninh: \xc4\x90\xe1\xbb\x99ng th\xc3\xa1i m\xe1\xba\xa1nh tay v\xe1\xbb\x9bi &quot;c\xc6\xa1n s\xe1\xbb\x91t&quot; \xc4\x91\xe1\xba\xa5t h\xe1\xba\xa7m h\xe1\xba\xadp"
+                                                        href="/bat-dong-san/quang-ninh-dong-thai-manh-tay-voi-con-sot-dat-ham-hap-20210408163028917.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- UBND huy\xe1\xbb\x87n V\xc3\xa2n
+                                                    \xc4\x90\xe1\xbb\x93n, t\xe1\xbb\x89nh Qu\xe1\xba\xa3ng Ninh
+                                                    v\xe1\xbb\xaba ph\xc3\xa1t \xc4\x91i th\xc3\xb4ng b\xc3\xa1o trong
+                                                    \xc4\x91\xc3\xb3 c\xc3\xb3 n\xe1\xbb\x99i dung nghi\xc3\xaam
+                                                    c\xe1\xba\xa5m vi\xe1\xbb\x87c c\xc3\xa1n b\xe1\xbb\x99, c\xc3\xb4ng
+                                                    ch\xe1\xbb\xa9c tham gia c\xc3\xa1c ho\xe1\xba\xa1t
+                                                    \xc4\x91\xe1\xbb\x99ng m\xc3\xb4i gi\xe1\xbb\x9bi b\xe1\xba\xa5t
+                                                    \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|5" data-cat-id="927"
+                                                            class="news-item__category"
+                                                            title="B\xe1\xba\xa5t \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n"
+                                                            href="/bat-dong-san.htm">B\xe1\xba\xa5t
+                                                        \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 N\xc4\x83m 08/04/2021 - 16:41</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|6" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/cuc-truong-cuc-thue-cho-phep-mien-tien-thue-dat-sai-117-ty-dong-20210407090818716.htm"
+                                                               \r\n
+                                                               title="C\xe1\xbb\xa5c tr\xc6\xb0\xe1\xbb\x9fng C\xe1\xbb\xa5c Thu\xe1\xba\xbf cho ph\xc3\xa9p mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t sai 11,7 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="C\xe1\xbb\xa5c tr\xc6\xb0\xe1\xbb\x9fng C\xe1\xbb\xa5c Thu\xe1\xba\xbf cho ph\xc3\xa9p mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t sai 11,7 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/07/tru-so-ubnd-tinh-ben-tre-1617761001701.png"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|6" \r\n
+                                                        href="/xa-hoi/cuc-truong-cuc-thue-cho-phep-mien-tien-thue-dat-sai-117-ty-dong-20210407090818716.htm"
+                                                        \r\n
+                                                        title="C\xe1\xbb\xa5c tr\xc6\xb0\xe1\xbb\x9fng C\xe1\xbb\xa5c Thu\xe1\xba\xbf cho ph\xc3\xa9p mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t sai 11,7 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng">\r\n
+                                                    \r\n C\xe1\xbb\xa5c tr\xc6\xb0\xe1\xbb\x9fng C\xe1\xbb\xa5c
+                                                    Thu\xe1\xba\xbf cho ph\xc3\xa9p mi\xe1\xbb\x85n ti\xe1\xbb\x81n
+                                                    thu\xc3\xaa \xc4\x91\xe1\xba\xa5t sai 11,7 t\xe1\xbb\xb7
+                                                    \xc4\x91\xe1\xbb\x93ng \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n
+                                                    <a data-utm="Article|Box_DangQuanTam|6" class="news-item__sapo"
+                                                       title="C\xe1\xbb\xa5c tr\xc6\xb0\xe1\xbb\x9fng C\xe1\xbb\xa5c Thu\xe1\xba\xbf cho ph\xc3\xa9p mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t sai 11,7 t\xe1\xbb\xb7 \xc4\x91\xe1\xbb\x93ng"
+                                                       href="/xa-hoi/cuc-truong-cuc-thue-cho-phep-mien-tien-thue-dat-sai-117-ty-dong-20210407090818716.htm">(D\xc3\xa2n
+                                                        tr\xc3\xad)&nbsp;- Vi ph\xe1\xba\xa1m trong l\xc4\xa9nh
+                                                        v\xe1\xbb\xb1c quy ho\xe1\xba\xa1ch, k\xe1\xba\xbf
+                                                        ho\xe1\xba\xa1ch s\xe1\xbb\xad d\xe1\xbb\xa5ng
+                                                        \xc4\x91\xe1\xba\xa5t \xe1\xbb\x9f t\xe1\xbb\x89nh
+                                                        B\xe1\xba\xbfn Tre th\xe1\xbb\x83 hi\xe1\xbb\x87n r\xc3\xb5
+                                                        trong vi\xe1\xbb\x87c t\xe1\xbb\x95 ch\xe1\xbb\xa9c
+                                                        th\xe1\xbb\xb1c hi\xe1\xbb\x87n c\xc3\xa1c d\xe1\xbb\xb1
+                                                        \xc3\xa1n s\xe1\xba\xa3n xu\xe1\xba\xa5t kinh doanh t\xc3\xb9y
+                                                        ti\xe1\xbb\x87n, tr\xc3\xa1i quy ho\xe1\xba\xa1ch
+                                                        t\xc6\xb0\xc6\xa1ng \xc4\x91\xe1\xbb\x91i ph\xe1\xbb\x95
+                                                        bi\xe1\xba\xbfn.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|6" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 T\xc6\xb0 07/04/2021 - 10:18</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|7" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/khoa-hoc-cong-nghe/binh-dinh-thu-tuong-dong-y-mien-tien-thue-dat-mot-phan-du-an-icise-20210408174554556.htm"
+                                                               \r\n
+                                                               title="B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh: Th\xe1\xbb\xa7 t\xc6\xb0\xe1\xbb\x9bng \xc4\x91\xe1\xbb\x93ng \xc3\xbd mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t m\xe1\xbb\x99t ph\xe1\xba\xa7n d\xe1\xbb\xb1 \xc3\xa1n ICISE">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh: Th\xe1\xbb\xa7 t\xc6\xb0\xe1\xbb\x9bng \xc4\x91\xe1\xbb\x93ng \xc3\xbd mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t m\xe1\xbb\x99t ph\xe1\xba\xa7n d\xe1\xbb\xb1 \xc3\xa1n ICISE"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/08/2-1617878509922.jpg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|7" \r\n
+                                                        href="/khoa-hoc-cong-nghe/binh-dinh-thu-tuong-dong-y-mien-tien-thue-dat-mot-phan-du-an-icise-20210408174554556.htm"
+                                                        \r\n
+                                                        title="B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh: Th\xe1\xbb\xa7 t\xc6\xb0\xe1\xbb\x9bng \xc4\x91\xe1\xbb\x93ng \xc3\xbd mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t m\xe1\xbb\x99t ph\xe1\xba\xa7n d\xe1\xbb\xb1 \xc3\xa1n ICISE">\r\n
+                                                    \r\n B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh: Th\xe1\xbb\xa7
+                                                    t\xc6\xb0\xe1\xbb\x9bng \xc4\x91\xe1\xbb\x93ng \xc3\xbd
+                                                    mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t
+                                                    m\xe1\xbb\x99t ph\xe1\xba\xa7n d\xe1\xbb\xb1 \xc3\xa1n ICISE
+                                                    \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|7" class="news-item__sapo"
+                                                        title="B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh: Th\xe1\xbb\xa7 t\xc6\xb0\xe1\xbb\x9bng \xc4\x91\xe1\xbb\x93ng \xc3\xbd mi\xe1\xbb\x85n ti\xe1\xbb\x81n thu\xc3\xaa \xc4\x91\xe1\xba\xa5t m\xe1\xbb\x99t ph\xe1\xba\xa7n d\xe1\xbb\xb1 \xc3\xa1n ICISE"
+                                                        href="/khoa-hoc-cong-nghe/binh-dinh-thu-tuong-dong-y-mien-tien-thue-dat-mot-phan-du-an-icise-20210408174554556.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Th\xe1\xbb\xa7 t\xc6\xb0\xe1\xbb\x9bng
+                                                    \xc4\x91\xe1\xbb\x93ng \xc3\xbd mi\xe1\xbb\x85n ti\xe1\xbb\x81n
+                                                    thu\xc3\xaa \xc4\x91\xe1\xba\xa5t cho Trung t\xc3\xa2m
+                                                    Qu\xe1\xbb\x91c t\xe1\xba\xbf khoa h\xe1\xbb\x8dc v\xc3\xa0
+                                                    gi\xc3\xa1o d\xe1\xbb\xa5c li\xc3\xaan ng\xc3\xa0nh ICISE
+                                                    (\xc4\x91\xe1\xba\xb7t t\xe1\xba\xa1i TP Quy Nh\xc6\xa1n,
+                                                    t\xe1\xbb\x89nh B\xc3\xacnh \xc4\x90\xe1\xbb\x8bnh) c\xe1\xbb\xa7a
+                                                    GS Tr\xe1\xba\xa7n Thanh V\xc3\xa2n t\xe1\xbb\xab n\xc4\x83m 2011
+                                                    \xc4\x91\xe1\xba\xbfn h\xe1\xba\xbft n\xc4\x83m 2020.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|7" data-cat-id="894"
+                                                            class="news-item__category"
+                                                            title="Khoa h\xe1\xbb\x8dc - C\xc3\xb4ng ngh\xe1\xbb\x87"
+                                                            href="/khoa-hoc-cong-nghe.htm">Khoa h\xe1\xbb\x8dc -
+                                                        C\xc3\xb4ng ngh\xe1\xbb\x87</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 N\xc4\x83m 08/04/2021 - 21:23</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|8" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/bat-dong-san/van-don-cam-can-bo-buon-ban-moi-gioi-va-tiep-tay-cho-dau-co-dat-dai-20210408084904555.htm"
+                                                               \r\n
+                                                               title="V\xc3\xa2n \xc4\x90\xe1\xbb\x93n: C\xe1\xba\xa5m c\xc3\xa1n b\xe1\xbb\x99 bu\xc3\xb4n b\xc3\xa1n, m\xc3\xb4i gi\xe1\xbb\x9bi v\xc3\xa0 ti\xe1\xba\xbfp tay cho \xc4\x91\xe1\xba\xa7u c\xc6\xa1 \xc4\x91\xe1\xba\xa5t \xc4\x91ai">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="V\xc3\xa2n \xc4\x90\xe1\xbb\x93n: C\xe1\xba\xa5m c\xc3\xa1n b\xe1\xbb\x99 bu\xc3\xb4n b\xc3\xa1n, m\xc3\xb4i gi\xe1\xbb\x9bi v\xc3\xa0 ti\xe1\xba\xbfp tay cho \xc4\x91\xe1\xba\xa7u c\xc6\xa1 \xc4\x91\xe1\xba\xa5t \xc4\x91ai"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/08/van-don-1-1617846320487.jpeg"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|8" \r\n
+                                                        href="/bat-dong-san/van-don-cam-can-bo-buon-ban-moi-gioi-va-tiep-tay-cho-dau-co-dat-dai-20210408084904555.htm"
+                                                        \r\n
+                                                        title="V\xc3\xa2n \xc4\x90\xe1\xbb\x93n: C\xe1\xba\xa5m c\xc3\xa1n b\xe1\xbb\x99 bu\xc3\xb4n b\xc3\xa1n, m\xc3\xb4i gi\xe1\xbb\x9bi v\xc3\xa0 ti\xe1\xba\xbfp tay cho \xc4\x91\xe1\xba\xa7u c\xc6\xa1 \xc4\x91\xe1\xba\xa5t \xc4\x91ai">\r\n
+                                                    \r\n V\xc3\xa2n \xc4\x90\xe1\xbb\x93n: C\xe1\xba\xa5m c\xc3\xa1n
+                                                    b\xe1\xbb\x99 bu\xc3\xb4n b\xc3\xa1n, m\xc3\xb4i gi\xe1\xbb\x9bi
+                                                    v\xc3\xa0 ti\xe1\xba\xbfp tay cho \xc4\x91\xe1\xba\xa7u c\xc6\xa1
+                                                    \xc4\x91\xe1\xba\xa5t \xc4\x91ai \r\n</a>\r\n\r\n\r\n \r\n \r\n
+                                                </h3>\r\n \r\n <a data-utm="Article|Box_DangQuanTam|8"
+                                                                  class="news-item__sapo"
+                                                                  title="V\xc3\xa2n \xc4\x90\xe1\xbb\x93n: C\xe1\xba\xa5m c\xc3\xa1n b\xe1\xbb\x99 bu\xc3\xb4n b\xc3\xa1n, m\xc3\xb4i gi\xe1\xbb\x9bi v\xc3\xa0 ti\xe1\xba\xbfp tay cho \xc4\x91\xe1\xba\xa7u c\xc6\xa1 \xc4\x91\xe1\xba\xa5t \xc4\x91ai"
+                                                                  href="/bat-dong-san/van-don-cam-can-bo-buon-ban-moi-gioi-va-tiep-tay-cho-dau-co-dat-dai-20210408084904555.htm">UBND
+                                                    huy\xe1\xbb\x87n V\xc3\xa2n \xc4\x90\xe1\xbb\x93n (t\xe1\xbb\x89nh
+                                                    Qu\xe1\xba\xa3ng Ninh) v\xe1\xbb\xaba ra th\xc3\xb4ng b\xc3\xa1o
+                                                    nghi\xc3\xaam c\xe1\xba\xa5m c\xc3\xa1n b\xe1\xbb\x99, c\xc3\xb4ng
+                                                    ch\xe1\xbb\xa9c tham gia c\xc3\xa1c ho\xe1\xba\xa1t
+                                                    \xc4\x91\xe1\xbb\x99ng m\xc3\xb4i gi\xe1\xbb\x9bi b\xe1\xba\xa5t
+                                                    \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n, ti\xe1\xba\xbfp tay cho
+                                                    vi\xe1\xbb\x87c \xc4\x91\xe1\xba\xa7u c\xc6\xa1, bu\xc3\xb4n
+                                                    b\xc3\xa1n \xc4\x91\xe1\xba\xa5t \xc4\x91ai.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|8" data-cat-id="927"
+                                                            class="news-item__category"
+                                                            title="B\xe1\xba\xa5t \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n"
+                                                            href="/bat-dong-san.htm">B\xe1\xba\xa5t
+                                                        \xc4\x91\xe1\xbb\x99ng s\xe1\xba\xa3n</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 N\xc4\x83m 08/04/2021 - 08:49</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                        <li>\r\n \r\n
+                                            <div class="news-item news-item--timeline news-item--left2right ">\r\n
+                                                \r\n\r\n\r\n<a data-utm="Article|Box_DangQuanTam|9" \r\n
+                                                               class="news-item__avatar"
+                                                               href="/xa-hoi/chu-tich-pho-chu-tich-ben-tre-giai-doan-20152018-kiem-diem-trach-nhiem-20210409172258639.htm"
+                                                               \r\n
+                                                               title="Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch, Ph\xc3\xb3 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n 2015-2018 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch nhi\xe1\xbb\x87m">\r\n
+                                                    \r\n \r\n \r\n
+                                                    <div class="dt-thumbnail dt-thumbnail--3x2">\r\n <img
+                                                            alt="Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch, Ph\xc3\xb3 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n 2015-2018 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch nhi\xe1\xbb\x87m"
+                                                            class=" no-img"
+                                                            lazy-src="https://icdn.dantri.com.vn/zoom/480_320/2021/04/07/tru-so-ubnd-tinh-ben-tre-1617761001701.png"
+                                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">\r\n
+                                                    </div>
+                                                    \r\n \r\n \r\n</a>\r\n\r\n\r\n
+                                                <div class="news-item__content">\r\n \r\n\r\n <h3
+                                                        class=\'news-item__title\'>\r\n \r\n\r\n\r\n<a
+                                                        data-utm="Article|Box_DangQuanTam|9" \r\n
+                                                        href="/xa-hoi/chu-tich-pho-chu-tich-ben-tre-giai-doan-20152018-kiem-diem-trach-nhiem-20210409172258639.htm"
+                                                        \r\n
+                                                        title="Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch, Ph\xc3\xb3 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n 2015-2018 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch nhi\xe1\xbb\x87m">\r\n
+                                                    \r\n Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch, Ph\xc3\xb3 Ch\xe1\xbb\xa7
+                                                    t\xe1\xbb\x8bch B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n
+                                                    2015-2018 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch
+                                                    nhi\xe1\xbb\x87m \r\n</a>\r\n\r\n\r\n \r\n \r\n </h3>\r\n \r\n <a
+                                                        data-utm="Article|Box_DangQuanTam|9" class="news-item__sapo"
+                                                        title="Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch, Ph\xc3\xb3 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n 2015-2018 ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch nhi\xe1\xbb\x87m"
+                                                        href="/xa-hoi/chu-tich-pho-chu-tich-ben-tre-giai-doan-20152018-kiem-diem-trach-nhiem-20210409172258639.htm">(D\xc3\xa2n
+                                                    tr\xc3\xad)&nbsp;- Thanh tra Ch\xc3\xadnh ph\xe1\xbb\xa7
+                                                    ki\xe1\xba\xbfn ngh\xe1\xbb\x8b Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch
+                                                    v\xc3\xa0 c\xc3\xa1c Ph\xc3\xb3 Ch\xe1\xbb\xa7 t\xe1\xbb\x8bch
+                                                    t\xe1\xbb\x89nh B\xe1\xba\xbfn Tre giai \xc4\x91o\xe1\xba\xa1n
+                                                    2015-2018, sai ph\xe1\xba\xa1m trong c\xc3\xb4ng t\xc3\xa1c thanh
+                                                    tra, ti\xe1\xba\xbfp d\xc3\xa2n, qu\xe1\xba\xa3n l\xc3\xbd,
+                                                    s\xe1\xbb\xad d\xe1\xbb\xa5ng \xc4\x91\xe1\xba\xa5t
+                                                    \xc4\x91ai...ph\xe1\xba\xa3i t\xe1\xbb\x95 ch\xe1\xbb\xa9c
+                                                    ki\xe1\xbb\x83m \xc4\x91i\xe1\xbb\x83m tr\xc3\xa1ch
+                                                    nhi\xe1\xbb\x87m.</a>\r\n \r\n
+                                                    <div class="news-item__meta">\r\n\r\n \r\n <a
+                                                            data-utm="Article|Box_DangQuanTam|9" data-cat-id="20"
+                                                            class="news-item__category" title="X\xc3\xa3 h\xe1\xbb\x99i"
+                                                            href="/xa-hoi.htm">X\xc3\xa3 h\xe1\xbb\x99i</a>\r\n <span
+                                                            class="news-item__time">Th\xe1\xbb\xa9 S\xc3\xa1u 09/04/2021 - 19:45</span>\r\n
+                                                    </div>
+                                                    \r\n
+                                                </div>
+                                                \r\n
+                                            </div>
+                                            \r\n\r\n
+                                        </li>
+                                        \r\n
+                                    </ul>
+                                    \r\n
+                                </div>
+                                \r\n
+                            </section>
+                            \r\n\r\n
+                        </div>
+                        \r\n\r\n
+                        <div recommend-news></div>
+                        \r\n
+                        <div data-dtms="wss-prod" data-cat="20" data-count="3" data-type="1" data-font="1"></div>
+                        \r\n\r\n
+                        <div data-moi-nhat></div>
+                        \r\n\r\n\r\n \r\n
+                    </div>
+                    \r\n
+                </div>
+                \r\n\r\n\r\n \r\n
+            </article>
+            \r\n\r\n\r\n
+        </div>
+        \r\n
+        <div class="col col--secondary">\r\n
+            <div>\r\n
+                <div ung-ho-box></div>
+                \r\n \r\n
+            </div>
+            \r\n
+        </div>
+        \r\n
+    </div>
+    \r\n
+    <div class="dt-article-bottom-page">\r\n \r\n</div>
+    \r\n\r\n
+    <div data-custom-script="20"></div>
+    \r\n\r\n
+    <div facebook-init></div>
+    \r\n
+    <div image-preview></div>
+    \r\n\r\n
+    <script type="application/ld+json">\r\n{"@context": "http://schema.org", "@type":"Organization", "name": "B\xc3\xa1o D\xc3\xa2n Tr\xc3\xad", "url": "https://dantri.com.vn","slogan": "Tin t\xe1\xbb\xa9c Vi\xe1\xbb\x87t Nam v\xc3\xa0 qu\xe1\xbb\x91c t\xe1\xba\xbf n\xc3\xb3ng, nhanh, c\xe1\xba\xadp nh\xe1\xba\xadt 24h", "logo": "https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png", "email":"info@dantri.com.vn", "additionalType": "https://vi.wikipedia.org/wiki/B%C3%A1o_%C4%91i%E1%BB%87n_t%E1%BB%AD", "sameAs":["https://www.facebook.com/baodantridientu", "https://vi.wikipedia.org/wiki/D%C3%A2n_tr%C3%AD_(b%C3%A1o)"], "address": {"@type": "PostalAddress", "streetAddress":"Nh\xc3\xa0 48, ng\xc3\xb5 2 Gi\xe1\xba\xa3ng V\xc3\xb5, C\xc3\xa1t Linh, \xc4\x90\xe1\xbb\x91ng \xc4\x90a", "addressLocality": "H\xc3\xa0 N\xe1\xbb\x99i"}, "contactPoint":[{"@type": "ContactPoint", "telephone": "+842437366491", "contactOption": "TollFree", "contactType": "customer service", "areaServed": "VN"}]}</script>
+    \r\n
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Trang ch\xe1\xbb\xa7",
+                    "item": "https://dantri.com.vn/"
+                }
+            ],
+            [
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "X\xc3\xa3 h\xe1\xbb\x99i",
+                    "item": "https://dantri.com.vn/xa-hoi.htm"
+                }
+            ],
+            [
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Thu h\xe1\xbb\x93i th\xc3\xb4ng tin \\"
+                    ch
+                    \
+                    xc6
+                    \
+                    xb0a
+                    ch
+                    \
+                    xc3
+                    \
+                    xadnh
+                    x
+                    \
+                    xc3
+                    \
+                    xa1c
+                    \
+                    \
+                    " v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y",
+                    "item": "https://dantri.com.vn/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm"
+                }
+            ]
+        ]
+    }</script>
+    \r\n
+    <script>var breadcrumbs = [0, 20, 0];</script>
+    \r\n \r\n
+    <script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "@id": "https://dantri.com.vn/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm"
+        },
+        "headline": "Thu h\xe1\xbb\x93i th\xc3\xb4ng tin \\"
+        ch
+        \
+        xc6
+        \
+        xb0a
+        ch
+        \
+        xc3
+        \
+        xadnh
+        x
+        \
+        xc3
+        \
+        xa1c
+        \
+        \
+        " v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y",
+        "description": "(D\xc3\xa2n tr\xc3\xad) - Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i.",
+        "image": {
+            "@context": "http://schema.org",
+            "@type": "ImageObject",
+            "url": "https://icdn.dantri.com.vn/zoom/1200_630/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg",
+            "width": "1200",
+            "height": "630"
+        },
+        "author": {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "D\xc3\xa2n Tr\xc3\xad",
+            "url": "https://dantri.com.vn"
+        },
+        "datePublished": "2021-04-13T17:12:16.64",
+        "dateModified": "2021-04-13T17:12:16.64",
+        "publisher": {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "B\xc3\xa1o D\xc3\xa2n Tr\xc3\xad",
+            "logo": {
+                "@context": "http://schema.org",
+                "@type": "ImageObject",
+                "url": "https://cdnweb.dantri.com.vn/bundle/static/assets/logo_dantri.png",
+                "height": "160px",
+                "width": "48px"
+            }
+        }
+    }</script>
+    \r\n\r\n\r\n\r\n\r\n
+    <script>  var ggCatList = "";</script>
+    \r\n\r\n
+</main>
+\r\n\r\n\r\n
+<footer class="dt-footer">\r\n \r\n\r\n\r\n
+    <div class="dt-footer__content">\r\n
+        <div class="container">\r\n
+            <div class="row">\r\n
+                <div class="dt-footer__info col-6">\r\n <p>C\xc6\xa1 quan c\xe1\xbb\xa7a B\xe1\xbb\x99 Lao
+                    \xc4\x91\xe1\xbb\x99ng - Th\xc6\xb0\xc6\xa1ng binh v\xc3\xa0 X\xc3\xa3 h\xe1\xbb\x99i</p>\r\n <p>
+                    T\xe1\xbb\x95ng bi\xc3\xaan t\xe1\xba\xadp: Ph\xe1\xba\xa1m Tu\xe1\xba\xa5n Anh</p>\r\n <p>\r\n
+                    Gi\xe1\xba\xa5y ph\xc3\xa9p ho\xe1\xba\xa1t \xc4\x91\xe1\xbb\x99ng b\xc3\xa1o \xc4\x91i\xe1\xbb\x87n
+                    t\xe1\xbb\xad D\xc3\xa2n tr\xc3\xad s\xe1\xbb\x91 298/GP - BTTTT H\xc3\xa0 N\xe1\xbb\x99i,
+                    ng\xc3\xa0y 15-07-2020.\r\n </p>\r\n <p>T\xc3\xb2a so\xe1\xba\xa1n: Nh\xc3\xa0 48, ng\xc3\xb5 2
+                    Gi\xe1\xba\xa3ng V\xc3\xb5, C\xc3\xa1t Linh, \xc4\x90\xe1\xbb\x91ng \xc4\x90a, H\xc3\xa0
+                    N\xe1\xbb\x99i</p>\r\n <p>\r\n \xc4\x90i\xe1\xbb\x87n tho\xe1\xba\xa1i: <a href="tel:024-3736-6491">024-3736-6491</a>.
+                    Fax:\r\n <a href="tel:024-3736-6491">024-3736-6491</a>\r\n </p>\r\n <p>\r\n Email: <a
+                        href="mailto:info@dantri.com.vn">info@dantri.com.vn</a>.\r\n Website:\r\n <a
+                        href="https://www.dantri.com.vn">https://www.dantri.com.vn</a>\r\n </p>\r\n <p>\r\n
+                    M\xe1\xbb\x8di h\xc3\xa0nh \xc4\x91\xe1\xbb\x99ng s\xe1\xbb\xad d\xe1\xbb\xa5ng n\xe1\xbb\x99i dung
+                    \xc4\x91\xc4\x83ng t\xe1\xba\xa3i tr\xc3\xaan B\xc3\xa1o \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad
+                    D\xc3\xa2n tr\xc3\xad t\xe1\xba\xa1i\r\n \xc4\x91\xe1\xbb\x8ba ch\xe1\xbb\x89 www.dantri.com.vn
+                    ph\xe1\xba\xa3i c\xc3\xb3 s\xe1\xbb\xb1 \xc4\x91\xe1\xbb\x93ng \xc3\xbd b\xe1\xba\xb1ng v\xc4\x83n
+                    b\xe1\xba\xa3n c\xe1\xbb\xa7a B\xc3\xa1o\r\n \xc4\x91i\xe1\xbb\x87n t\xe1\xbb\xad D\xc3\xa2n
+                    tr\xc3\xad.\r\n </p>\r\n
+                </div>
+                \r\n
+                <div class="col-1"></div>
+                \r\n
+                <div class="dt-footer__ads col-4">\r\n <p class="dt-footer_ads-info">\r\n Li\xc3\xaan h\xe1\xbb\x87
+                    qu\xe1\xba\xa3ng c\xc3\xa1o:&nbsp;<a href="tel:0945540330">0945.54.03.03</a>\r\n \r\n </p>\r\n <p>
+                    Email: <a href="mailto:quangcao@dantri.com.vn">quangcao@dantri.com.vn</a></p>\r\n <p>\r\n <a
+                        switch-version href="javascript:void(0);"><strong>Xem b\xe1\xba\xa3n mobile</strong></a>\r\n
+                </p>\r\n
+                    <div class="dt-footer__app clearfix">\r\n <a aria-label="B\xc3\xa1o D\xc3\xa2n tr\xc3\xad ios"
+                                                                 title="B\xc3\xa1o D\xc3\xa2n tr\xc3\xad - Dantri.com.vn"
+                                                                 target="_blank" rel="noopener"
+                                                                 href="https://apps.apple.com/vn/app/b%C3%A1o-d%C3%A2n-tr%C3%AD-dantri-com-vn/id1455334618?l=vi">\r\n
+                        <i class="dt-icon icon-app-store"></i>\r\n </a>\r\n <a
+                            aria-label="B\xc3\xa1o D\xc3\xa2n tr\xc3\xad android"
+                            title="B\xc3\xa1o D\xc3\xa2n tr\xc3\xad - Dantri.com.vn" target="_blank" rel="noopener"
+                            href="https://play.google.com/store/apps/details?id=vn.com.dantrinews.android">\r\n <i
+                            class="dt-icon icon-play-store"></i>\r\n </a>\r\n
+                    </div>
+                    \r\n
+                    <div class="dt-footer__social clearfix">\r\n <span>Theo d\xc3\xb5i D\xc3\xa2n Tr\xc3\xad tr\xc3\xaan:</span>\r\n
+                        <a target="_blank" href="https://www.facebook.com/baodantridientu"><img
+                                src="https://cdnweb.dantri.com.vn/bundle/static/assets/fb.png?v=0413160019"
+                                alt="Dantri.com.vn"></a>\r\n <a target="_blank"
+                                                                href="https://www.youtube.com/channel/UC4t5NcR9V40MB7rQru8AUew?sub_confirmation=1"><img
+                                src="https://cdnweb.dantri.com.vn/bundle/static/assets/yt.png?v=0413160019"
+                                alt="Dantri.com.vn"></a>\r\n
+                    </div>
+                    \r\n
+                </div>
+                \r\n
+            </div>
+            \r\n
+        </div>
+        \r\n
+    </div>
+    \r\n
+</footer>
+\r\n\r\n\r\n
+<script>var jsSettings = {
+    "ImageDomain": "https://icdn.dantri.com.vn",
+    "VideoDomain": "https://vcdn.dantri.com.vn",
+    "AudioDomain": "https://acdn.dantri.com.vn",
+    "CommentsDomain": "https://comment.dantri.com.vn",
+    "ApiComments": "https://apicomment.dantri.com.vn",
+    "DuLichDomain": "https://dulich.dantri.com.vn",
+    "TuyenSinhDomain": "https://tuyensinh.dantri.com.vn",
+    "DuHocDomain": "https://duhoc.dantri.com.vn",
+    "WebDomain": "https://dantri.com.vn",
+    "MobileDomain": "https://dantri.com.vn",
+    "CaptchaDomain": "https://captcha.dantri.com.vn",
+    "WebApi": "https://webapi.dantri.com.vn",
+    "AssertsDomain": "https://cdnweb.dantri.com.vn",
+    "ResourceDomains": ["https://*.dantri.com.vn/**", "http://*.dantri.com.vn/**"],
+    "CurrentDomain": "https://dantri.com.vn",
+    "IsMobile": 0,
+    "UngHoDomain": "https://ungho.dantri.com.vn",
+    "FacebookAppId": "164035690775918",
+    "CommonCDN": "https://cdnasset.dantri.com.vn",
+    "AdsManagerCode": "21899300285",
+    "IsAmp": 0,
+    "BlockedAds": false,
+    "Features": {"BannerUngThu": false},
+    "AppType": "Web",
+    "XdsSlots": {
+        "INVALID": "xds-0",
+        "TOP_HEADER": "xds-1",
+        "TOP_NEXT_TO_DT_LOGO": "xds-2",
+        "BACKGROUP": "xds-3",
+        "BALLOON_ADS": "xds-4",
+        "HOME_BACKGROUND": "xds-40",
+        "HOME_TOP_HEADER": "xds-41",
+        "HOME_TOP_RIGHT": "xds-50",
+        "HOME_MIDDLE_RIGHT": "xds-51",
+        "HOME_CENTER_BANNER": "xds-52",
+        "HOME_NATIVE_1": "xds-53",
+        "HOME_NATIVE_2": "xds-54",
+        "HOME_BOTTOM": "xds-55",
+        "HOME_MIDDLE_COLUMN_BOTTOM": "xds-56",
+        "HOME_PRIMARY_TOP": "xds-57",
+        "HOME_PRIMARY_BOTTOM": "xds-58",
+        "HOME_NATIVE_3": "xds-59",
+        "HOME_NATIVE_4": "xds-60",
+        "HOME_NATIVE_5": "xds-61",
+        "HOME_HORIZONTAL_0": "xds-70",
+        "HOME_HORIZONTAL_1": "xds-71",
+        "HOME_HORIZONTAL_2": "xds-72",
+        "HOME_HORIZONTAL_3": "xds-73",
+        "HOME_HORIZONTAL_4": "xds-74",
+        "HOME_HORIZONTAL_5": "xds-75",
+        "HOME_HORIZONTAL_6": "xds-76",
+        "HOME_HORIZONTAL_7": "xds-77",
+        "CATEGORY_BACKGROUND": "xds-90",
+        "CATEGORY_TOP_HEADER": "xds-92",
+        "CATEGORY_TOP_RIGHT": "xds-100",
+        "CATEGORY_MIDDLE_RIGHT": "xds-101",
+        "CATEGORY_MIDDLE_CENTER": "xds-102",
+        "CATEGORY_NATIVE_1": "xds-103",
+        "CATEGORY_NATIVE_2": "xds-104",
+        "CATEGORY_BOTTOM": "xds-105",
+        "CATEGORY_NATIVE_3": "xds-106",
+        "CATEGORY_TOP_READ": "xds-107",
+        "CATEGORY_NATIVE_4": "xds-108",
+        "CATEGORY_CENTER_EXPAND": "xds-109",
+        "ARTICLE_RIGHT": "xds-150",
+        "ARTICLE_BOTTOM": "xds-151",
+        "ARTICLE_BANNER": "xds-152",
+        "ARTICLE_NATIVE_1": "xds-153",
+        "ARTICLE_NATIVE_2": "xds-154",
+        "ARTICLE_IN_PAGE_1": "xds-155",
+        "ARTICLE_IN_PAGE_2": "xds-156",
+        "ARTICLE_TOP_HEADER": "xds-157",
+        "ARTICLE_BOTTOM_PAGE": "xds-158",
+        "ARTICLE_NATIVE_3": "xds-159",
+        "ARTICLE_AUTHOR_SIGN": "xds-160",
+        "MOBILE_TOP_HEADER": "xds-200",
+        "MOBILE_TOP_MOST": "xds-201",
+        "MOBILE_AFTER_BREADCRUMB": "xds-250",
+        "MOBILE_CATE_NATIVE_1": "xds-260",
+        "MOBILE_CATE_NATIVE_2": "xds-261",
+        "MOBILE_CATE_NATIVE_3": "xds-262",
+        "MOBILE_CATE_E_MAGAZINE_1": "xds-263",
+        "MOBILE_CATE_BOTTOM": "xds-264",
+        "MOBILE_CATEGORY_CENTER_1": "xds-265",
+        "MOBILE_CATE_ABOVE_NAV": "xds-266",
+        "MOBILE_BEFORE_FOOTER": "xds-300",
+        "MOBILE_HOME_CENTER_1": "xds-301",
+        "MOBILE_HOME_CENTER_2": "xds-302",
+        "MOBILE_BIG_ARTICLE_1": "xds-305",
+        "MOBILE_BIG_ARTICLE_2": "xds-306",
+        "MOBILE_HOME_CENTER_3": "xds-307",
+        "MOBILE_HOME_CENTER_4": "xds-308",
+        "MOBILE_HOME_CENTER_5": "xds-309",
+        "MOBILE_BEFORE_VIDEO": "xds-400",
+        "MOBILE_HOME_BOTTOM": "xds-401",
+        "MOBILE_FIRST_10_ARTICLE": "xds-500",
+        "MOBILE_IN_PAGE_1": "xds-3030",
+        "MOBILE_IN_PAGE_2": "xds-3040",
+        "MOBILE_BIG_ARTICLE_3": "xds-3061",
+        "MOBILE_BIG_ARTICLE_4": "xds-3062",
+        "MOBILE_BIG_ARTICLE_5": "xds-3063",
+        "MOBILE_BEFORE_COMMENT": "xds-3064",
+        "MOBILE_HOME_CENTER_6": "xds-3091",
+        "MOBILE_HOME_CENTER_7": "xds-3092",
+        "MOBILE_HOME_CENTER_8": "xds-3093",
+        "MOBILE_HOME_EMAGAZINE_3": "xds-3094",
+        "MOBILE_ARTICLE_E_MAGAZINE": "xds-4010",
+        "MOBILE_ARTICLE_AUTHOR_SIGN": "xds-5001",
+        "AMP_AUTO_ADS": "xds-9999",
+        "AMP_HOME_BEFORE_TTSK": "xds-10000",
+        "AMP_HOME_TTSK_5TH": "xds-10001",
+        "AMP_HOME_BEFORE_VIDEO": "xds-10002",
+        "AMP_HOME_BEFORE_THE_THAO": "xds-10003",
+        "AMP_HOME_NHAN_AI": "xds-10004",
+        "AMP_HOME_VAN_HOA": "xds-10005",
+        "AMP_HOME_PHAP_LUAT": "xds-10006",
+        "AMP_HOME_OTO": "xds-10007",
+        "AMP_HOME_KHOA_HOC": "xds-10008",
+        "AMP_HOME_DU_HOC": "xds-10009",
+        "AMP_HOME_BLOG": "xds-10010",
+        "AMP_ARTICLE_AFTER_SAPO": "xds-10050",
+        "AMP_ARTICLE_PARAGRAPH9": "xds-10051",
+        "AMP_ARTICLE_PARAGRAPH3": "xds-10052",
+        "AMP_ARTICLE_SHARE": "xds-10053",
+        "AMP_ARTICLE_LASTEST": "xds-10060",
+        "AMP_ARTICLE_FOOTER": "xds-10061",
+        "AMP_CATE_TOP": "xds-10100",
+        "AMP_CATE_TOP4": "xds-10101",
+        "AMP_CATE_AFTER_VIDEO": "xds-10102",
+        "AMP_CATE_NEWS_5TH": "xds-10103",
+        "AMP_CATE_NEWS_BOTTOM": "xds-10104",
+        "AMP_CATE_FOOTER": "xds-10105",
+        "AMP_TAG_TOP": "xds-10150",
+        "AMP_TAG_MIDDLE": "xds-10151",
+        "AMP_TAG_FOOTER": "xds-10152",
+        "AMP_STICKY_BOTTOM": "xds-10160",
+        "INTER_WEB_ARTICLE_TIN_LIEN_QUAN": "xds-20000",
+        "INTER_MOBILE_ARTICLE_TIN_LIEN_QUAN": "xds-30000",
+        "CAFE_HOZ": "xds-1000000"
+    },
+    "IsInter": false,
+    "Version": "637539270470069687",
+    "GoogleCaptchaConfig": {"SiteKey": "6LfAP8kZAAAAAPiZ8ZFuHdhifvNch-G9O1-aLQRs", "SecretKey": null}
+};</script>
+\r\n\r\n \r\n
+<script>var shortArticle = {
+    "available": false,
+    "id": "20210413114347761",
+    "subTitle": "TP Hu\xe1\xba\xbf:",
+    "title": "Thu h\xe1\xbb\x93i th\xc3\xb4ng tin \\"
+    ch\xc6\xb0a
+ch\xc3\xadnh
+x\xc3\xa1c\\" v\xe1\xbb\xa5 giao \xc4\x91\xe1\xba\xa5t cho nguy\xc3\xaan B\xc3\xad th\xc6\xb0 Th\xc3\xa0nh \xe1\xbb\xa7y", "sapo"
+:
+"<span>D\xc3\xa2n tr\xc3\xad</span>&nbsp;Ng\xc3\xa0y 13/4, sau khi ph\xc3\xa1t \xc4\x91i v\xc4\x83n b\xe1\xba\xa3n th\xc3\xb4ng tin vi\xe1\xbb\x87c giao l\xc3\xb4 \xc4\x91\xe1\xba\xa5t kh\xc3\xb4ng qua \xc4\x91\xe1\xba\xa5u gi\xc3\xa1 cho \xc3\xb4ng Hu\xe1\xbb\xb3nh C\xc6\xb0, UBND TP Hu\xe1\xba\xbf l\xe1\xba\xa1i c\xc3\xb3 v\xc4\x83n b\xe1\xba\xa3n thu h\xe1\xbb\x93i.", "image"
+:
+"https://icdn.dantri.com.vn/thumb_w/220/2021/04/13/ubnd-tp-hue-thu-hoi-thong-tin-1618288856780.jpeg", "url"
+:
+"/xa-hoi/thu-hoi-thong-tin-chua-chinh-xac-vu-giao-dat-cho-nguyen-bi-thu-thanh-uy-20210413114347761.htm", "tm"
+:
+671649136.64
+}
+;\r\n
+var articleCategoryTree = [0, 20, 728];</script>
+\r\n \r\n \r\n\r\n\r\n\n
+<script src="https://cdnweb.dantri.com.vn/bundle/static/dantri-baf88988.min.js?_=baf88988"></script>
+\n
+<script src="https://cdnweb.dantri.com.vn/bundle/static/vdlibs~dantri-baf88988.min.js?_=baf88988"></script>
+\n
+<script src="https://cdnweb.dantri.com.vn/bundle/static/vendors~dantri-baf88988.min.js?_=baf88988"></script>
+\n \r\n
+</body>
+\r\n
+</html>\r\n'

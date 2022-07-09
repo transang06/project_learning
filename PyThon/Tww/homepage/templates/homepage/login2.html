@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<style>
+		input{
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	{% if message  %}
+		{{message}}
+	{% endif %}
+	<form action="" enctype="multipart/form-data" method="post">
+
+		{% csrf_token %}
+		<label for="username">User Name</label>
+		<input id = "username" type="text" name="username">
+		<br>
+		<label for="password">Password</label>
+		<input id = "password" type="password" name = "password">
+		<br>
+		<input type="submit" value="Đăng nhập">
+	</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{% extends 'home/base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+    <div class="base_content">
+        <img style="width: 100%; height: 250px;" src="/static/images/logo.png" alt="logo">
+        <div class="container">
+
+        <div class="bar_login">
+            <div><a href="{% url 'home:login' %}">Log In</a></div>
+            <div>&</div>
+            <div><a href="{% url 'home:register' %}">Register</a></div>
+        </div>
+        <div class="col-md-12">
+            <form class="needs-validation" action="{% url  'home:register' %}" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName" name="first_name"
+                               placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName" name="last_name"
+                               placeholder="Enter your last name" required=>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+
+                        <input type="text" class="form-control" id="username" name="username"
+                               placeholder="Enter your account name" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email </label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address"
+                           required>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter an address"
+                           required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="country">Gender</label>
+                        <select class="custom-select d-block w-100" id="country" name="gender" required="">
+                            <option value="">Choose...</option>
+                            <option value="nam">Male</option>
+                            <option value="nu">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="birthday">Date of Birth</label>
+                        <input type="date" class="form-control" id="birthday" name="birthday" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password"
+                               placeholder="Enter password" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="password1">Repeat Password</label>
+                        <input type="password" class="form-control" id="password1" name="password1"
+                               placeholder="Repeat Password" required>
+                    </div>
+                </div>
+                {% if message %}
+                    <small class="form-text text-muted"> {{ message }}</small>
+                {% endif %}
+                <hr class="mb-4">
+                <button class="btn-grad" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}
